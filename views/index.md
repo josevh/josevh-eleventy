@@ -1,7 +1,8 @@
 ---
 layout: base.liquid
-pageTitle: Web Developer. Application Developer. Technology enthusiast.
 ---
+
+# Web Developer. Application Developer. Technology enthusiast.
 
 #### Who I am
 My name is Jose Victor Herrera. I am a web/app/etc developer in Los Angeles, CA.

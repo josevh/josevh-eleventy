@@ -1,5 +1,5 @@
 ---
-layout: base.liquid
+layout: "base.njk"
 ---
 
 # Web Developer. Application Developer. Technology enthusiast.

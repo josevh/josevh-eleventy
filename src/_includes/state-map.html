@@ -1,0 +1,66 @@
+<!-- @source: https://www.amcharts.com/visited_states/ -->
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js" type="text/javascript"></script>
+
+<style>
+    #mapdiv a {
+        display: none !important;
+    }
+</style>
+
+<div id="mapdiv" style="width: 100%; min-height: 300px;"></div>
+
+<script type="text/javascript">
+    (function () {
+        let map = AmCharts.makeChart("mapdiv", {
+            type: "map",
+            theme: "light",
+            panEventsEnabled: true,
+            backgroundColor: "#f8f8f8",
+            backgroundAlpha: 0,
+            zoomControl: { zoomControlEnabled: false },
+            dataProvider: {
+                map: "usaHigh",
+                getAreasFromMap: true,
+                areas: [
+                    { "id": "US-AZ", "showAsSelected": true },
+                    { "id": "US-CO", "showAsSelected": true },
+                    { "id": "US-CA", "showAsSelected": true },
+                    { "id": "US-DC", "showAsSelected": true },
+                    { "id": "US-DE", "showAsSelected": true },
+                    { "id": "US-ID", "showAsSelected": true },
+                    { "id": "US-IL", "showAsSelected": true },
+                    { "id": "US-IA", "showAsSelected": true },
+                    { "id": "US-MA", "showAsSelected": true },
+                    { "id": "US-MD", "showAsSelected": true },
+                    { "id": "US-MO", "showAsSelected": true },
+                    { "id": "US-NC", "showAsSelected": true },
+                    { "id": "US-NE", "showAsSelected": true },
+                    { "id": "US-NH", "showAsSelected": true },
+                    { "id": "US-NJ", "showAsSelected": true },
+                    { "id": "US-NM", "showAsSelected": true },
+                    { "id": "US-NV", "showAsSelected": true },
+                    { "id": "US-NY", "showAsSelected": true },
+                    { "id": "US-OK", "showAsSelected": true },
+                    { "id": "US-PA", "showAsSelected": true },
+                    { "id": "US-TX", "showAsSelected": true },
+                    { "id": "US-UT", "showAsSelected": true },
+                    { "id": "US-VA", "showAsSelected": true },
+                    { "id": "US-WA", "showAsSelected": true },
+                    { "id": "US-WI", "showAsSelected": true },
+                    { "id": "US-WY", "showAsSelected": true },
+                ]
+            },
+            areasSettings: {
+                autoZoom: false,
+                color: "#B4B4B7",
+                colorSolid: "#84ADE9",
+                selectedColor: "#84ADE9",
+                outlineColor: "#666666",
+                rollOverColor: "#9EC2F7",
+                rollOverOutlineColor: "#000000"
+            }
+        });
+    })()
+</script>

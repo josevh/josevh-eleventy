@@ -1,194 +1,23 @@
 <!doctype html>
+{# <html lang="{{ page.lang | default: site.active_lang | default: 'en' }}"> #}
 <html lang="en">
-    <head>
-        <!-- TODO: get from conf? -->
-        {% if pageTitle %}
-          <title>Jose V Herrera - {{ pageTitle }}</title>
-        {% else %}
-          <title>Jose V Herrera</title>
-        {% endif %}
-
-        <meta charset="utf-8">
-        <meta name="description" content="Jose's thoughts, projects, etc.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Oswald:400,700|Inconsolata:400">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/6.0.0/sanitize.min.css">
-
-        <style type="text/css">.content .title{margin-bottom:1.5rem}.content>h2{margin:1.5rem 0}.content ul.docs{list-style-type:none;padding-left:0}.content ul.docs li.doc{margin-bottom:1.5rem;position:relative}.content ul.docs li.doc span{display:inline-block;vertical-align:top}@media screen and (max-width:768px){.content ul.docs li.doc span{display:block}}.content ul.docs li.doc span.date{width:120px}@media screen and (max-width:768px){.content ul.docs li.doc span.date{width:100%;font-size:.875rem}}.content ul.docs li.doc span.name{width:calc(100% - 120px)}@media screen and (max-width:768px){.content ul.docs li.doc span.name{width:100%}}</style>
-        <style type="text/css">ul.contact-links li.contact-link a svg{width:2.5rem;height:2.5rem}</style>
-
-        <!-- main css -->
-        <style>
-            html {
-                font-size: 16px;
-                line-height: 1.5rem;
-                word-spacing: 1px;
-                -ms-text-size-adjust: 100%;
-                -webkit-text-size-adjust: 100%;
-                -moz-osx-font-smoothing: grayscale;
-                -webkit-font-smoothing: antialiased;
-                }
-            html body {
-                display: flex;
-                flex-direction: column;
-                max-width: 42rem;
-                padding: 0 2rem;
-                background-color: #F8F8F8;
-                color: #666666;
-                font-weight: 400;
-                font-size: 16px;
-                margin: 4rem auto;
-                font-family: "Merriweather", serif;
-                }
-                @media screen and (max-width: 768px) {
-            html body {
-                    margin: 2rem auto;
-                }
-                }
-            html h1, html h2, html h3, html h4, html h5, html h6 {
-                font-family: "Oswald", sans-serif;
-                line-height: 1.2;
-                color: #333333;
-                letter-spacing: -1px;
-                margin-top: 0;
-                margin-bottom: 0.5rem;
-                }
-            html h1 {
-                font-size: 2.5rem;
-                }
-            html h2 {
-                font-size: 2rem;
-                }
-            html h3 {
-                font-size: 1.75rem;
-                }
-            html h4 {
-                font-size: 1.5rem;
-                }
-            html h5 {
-                font-size: 1.25rem;
-                }
-            html h6 {
-                font-size: 1rem;
-                }
-
-            a {
-                color: #444444;
-                border-bottom: 1px dotted #444444;
-                text-decoration: none;
-                }
-            a:hover {
-                color: #000;
-                border-bottom-color: #000;
-                text-decoration: none;
-                }
-
-            pre, code {
-                font-family: "Inconsolata", monospace;
-                }
-        </style>
-
-        <!-- header css -->
-        <style>
-            header {
-              margin-bottom: 1.5rem;
-            }
-            header > h1 {
-              margin: 0;
-            }
-
-            nav {
-              font-family: "Oswald", sans-serif;
-              overflow: hidden;
-            }
-            nav a.brand {
-              display: inline-block;
-              vertical-align: top;
-              background-color: #333333;
-              padding: 0.33rem 1rem;
-              margin-right: 1rem;
-              font-style: italic;
-              color: #fff;
-            }
-            nav ul {
-              display: inline-block;
-              vertical-align: top;
-              padding-left: 0;
-              margin: 0;
-            }
-            @media screen and (max-width: 420px) {
-              nav ul {
-                display: block;
-                margin-top: 1.5rem;
-              }
-            }
-            nav ul li {
-              display: inline-block;
-              vertical-align: middle;
-            }
-            nav ul li + li {
-              padding: 0 0.5rem;
-            }
-            nav ul li:first-of-type {
-              padding-right: 0.5rem;
-            }
-            nav ul li a {
-              color: #333333;
-              text-decoration: none;
-              display: inline-block;
-              vertical-align: middle;
-            }
-        </style>
-
-        <!-- blog index -->
-        <style>
-            ul.docs {
-              list-style-type: none;
-              padding-left: 0;
-            }
-            ul.docs li.doc {
-              margin-bottom: 1.5rem;
-              position: relative;
-            }
-            ul.docs li.doc span {
-              display: inline-block;
-              vertical-align: top;
-            }
-            @media screen and (max-width: 768px) {
-              ul.docs li.doc span {
-                display: block;
-              }
-            }
-            ul.docs li.doc span.date {
-              width: 120px;
-            }
-            @media screen and (max-width: 768px) {
-              ul.docs li.doc span.date {
-                width: 100%;
-                font-size: 0.875rem;
-              }
-            }
-            ul.docs li.doc span.name {
-              width: calc(100% - 120px);
-            }
-            @media screen and (max-width: 768px) {
-              ul.docs li.doc span.name {
-                width: 100%;
-              }
-            }
-        </style>
-
-        <script async="" src="https://www.google-analytics.com/analytics.js" charset="utf-8"></script>
-    </head>
-    <body>
-        {% include "header.njk" %}
-        <div class="content">
-            <h1>{{ pageTitle }}</h1>
-            <!--<div class="timestamp">{{ page.date }}</div>-->
-
-            {{ content | safe }}
+  {%- include "head.njk" -%}
+  <body>
+    <div class="container my-4">
+      <div class="row justify-content-center mb-4">
+        <div class="col-sm-12 col-md-10 col-lg-7">
+          {%- include "nav.njk" -%}
         </div>
-    </body>
+      </div>
+      <div class="row justify-content-center content-wrapper">
+        <div class="col-sm-12 col-md-10 col-lg-7">
+          {{ content | safe }}
+
+          {%- include "footer.njk" -%}
+        </div>
+      </div>
+    </div>
+
+    {%- include "footer-scripts.njk" -%}
+  </body>
 </html>

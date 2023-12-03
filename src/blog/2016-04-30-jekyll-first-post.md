@@ -1,5 +1,5 @@
 ---
-pageTitle: Jekyll first post!
+title: Jekyll first post!
 ---
 This is my first post in this Jekyll experiment. It should be fun to experiment with and I'll see if I eventually decide to move to WordPress or not.
 

@@ -1,0 +1,104 @@
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: $background-color;
+
+    body {
+        background-color: inherit;
+        font-family: $font-regular;
+        color: $text-color-regular;
+
+        h1, h2, h3, h4, h5, h6, nav {
+            font-family: $font-headings;
+            color: $text-color-dark;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        p {
+            line-height: 2;
+        }
+
+        code, kbd, pre, samp, pre > code {
+            font-family: $font-monospace;
+        }
+
+        blockquote {
+            border-left: 4px solid $text-color-light;
+            padding-left: 8px;
+            padding-right: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+            background-color: $background-color-medium;
+        }
+
+        .content-wrapper {
+            a {
+                color: $text-color-link;
+                border-bottom: 1px dotted $text-color-link;
+
+                &:hover {
+                    color: $text-color-dark;
+                    border-bottom-color: $text-color-dark;
+                    text-decoration: none;
+                    border-bottom-style: solid;
+                }
+            }
+        }
+
+        nav.navbar {
+            border: none !important;
+
+            .navbar-brand {
+                background-color: $text-color-dark;
+                padding: .33rem 1.25rem;
+                margin-right: 1rem;
+                font-style: italic;
+                color: $background-color !important;
+                line-height: 1.5;
+                font-weight: 700;
+            }
+        }
+
+        .navbar-light {
+            background-color: $background-color !important;
+
+            .navbar-brand:focus,
+            .navbar-brand:hover {
+                color: $background-color;
+            }
+        }
+
+        .font-sans-serif {
+            font-family: $font-headings !important;
+        }
+    }
+}
+
+// utility classes
+.font-headings {
+    font-family: $font-headings !important;
+}
+
+.font-regular {
+    font-family: $font-regular !important;
+}
+
+.font-monospace {
+    font-family: $font-monospace !important;
+}
+
+a.no-border, a.no-border:hover {
+    border-bottom: none !important;
+}
+
+hr.dark {
+    border-top-color: $text-color-dark;
+}
+
+hr.bold {
+    border-top-width: 2px;
+}
+

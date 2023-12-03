@@ -1,5 +1,6 @@
 ---
 layout: "base.njk"
+tags: page
 ---
 
 # Web Developer. Application Developer. Technology enthusiast.

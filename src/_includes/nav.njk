@@ -1,0 +1,53 @@
+<nav class="navbar navbar-light bg-light navbar-expand-md px-0">
+  <a class="navbar-brand" href="{{ '/' | url }}">{{ site.title }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarContent">
+    <ul class="navbar-nav">
+      {# Automatic nav items from pages #}
+      {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
+        {% if nav_page.data.nav_include %}
+          <li class="nav-item {% if nav_page.url in page.url %}active{% endif %}">
+            <a
+              class="nav-link"
+              href="{{ nav_page.url | url }}"
+            >{{ nav_page.data.title }}{% if nav_page.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    {# Language switcher #}
+    <ul class="nav navbar-nav language-nav ml-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+          {%- set active_lang_full = site.data.general.language.full[site.active_lang] -%}
+          <span class="country-name notranslate">{{ site.active_lang | upper }}</span>
+        </a>
+        <div class="dropdown-menu">
+          {% for language in site.languages %}
+            {% if language != site.active_lang %}
+              {%- set lang_href -%}
+                {%- if language == site.default_lang -%}
+                  {{site.baseurl}}{{page.url}}
+                {%- else -%}
+                  {{site.baseurl}}/{{ language }}{{page.url}}
+                {%- endif -%}
+              {%- endset -%}
+              {%- set language_full = site.data.general.language.full[language] -%}
+
+              <a
+                class="dropdown-item"
+                href="{{ lang_href }}"
+              >
+                <span class="country-name notranslate">{{ language | upper }} - {{ language_full }}</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,20 @@
+---
+layout: "page.njk"
+title: Blog
+permalink: /blog/
+tags: page
+nav_include: true
+nav_order: 1
+---
+{# TODO: add blog posts collection(?) #}
+{# TODO: add bllog posts #}
+<div id="blog-index row">
+    {% for post in collections.posts %}
+    <div class="col-12 py-2">
+        <div class="row">
+            {# <div class="col-12 col-sm-3">{{ post.date | date: "%b %d, %Y" }}</div> #}
+            {# <div class="col-12 col-sm-9"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.data.title }}</a></div> #}
+        </div>
+    </div>
+    {% endfor %}
+</div>

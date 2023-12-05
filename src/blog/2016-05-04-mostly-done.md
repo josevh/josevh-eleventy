@@ -41,5 +41,5 @@ I'm liking Jekyll, it's just flexible enough for a low-effort project.
 
 I'll include a few screenshots in case I update it later and want to look back on this.
 
-{% set images=data.carousel.images %}
-{% include "carousel.njk" %}
+{% assign images=carousel.images %}
+{% include "carousel.liquid" %}

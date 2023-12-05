@@ -25,7 +25,7 @@ layout: "base.njk"
                     {%- set maxRelatedCounter=0 -%}
                     {%- set maxRelatedReached=false -%}
 
-                    {% for post in collections.post %}
+                    {% for post in collections.post | reverse %}
                         {% if not maxRelatedReached %}
                             {% set sameTagCount=0 %}
 
@@ -59,27 +59,29 @@ layout: "base.njk"
         {% endif %}
     {% endif %}
 
-    {% if page.previous or page.next %}
+    {# https://www.11ty.dev/docs/filters/collection-items/#getpreviouscollectionitem-and-getnextcollectionitem #}
+    {% set previousPost = collections.post | getPreviousCollectionItem %}
+    {% set nextPost = collections.post | getNextCollectionItem %}
+
+    {% if previousPost or nextPost %}
         <hr class="bold dark">
         <div class="row pt-2">
             <div class="col">
-                {% if page.previous %}
+                {% if previousPost %}
                     <h5 class="text-uppercase">Previous</h5>
-                    <div class="mt-3"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+                    <div class="mt-3"><a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></div>
                 {% else %}
                     &nbsp;
                 {% endif %}
             </div>
             <div class="col text-right">
-                {% if page.next %}
+                {% if nextPost %}
                     <h5 class="text-uppercase">Next</h5>
-                    <div class="mt-3"><a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+                    <div class="mt-3"><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></div>
                 {% else %}
                     &nbsp;
                 {% endif %}
             </div>
         </div>
     {% endif %}
-
-    END
 </div>

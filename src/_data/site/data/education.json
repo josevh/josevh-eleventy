@@ -1,0 +1,24 @@
+[
+    {
+      "school": "California State University, Monterey Bay (CSUMB)",
+      "degrees": [
+        {
+          "name": "B.S. Computer Science",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "school": "Los Angeles City College",
+      "degrees": [
+        {
+          "name": "A.S. Computer Science",
+          "year": 2018
+        },
+        {
+          "name": "A.A. Computer Information Systems",
+          "year": 2016
+        }
+      ]
+    }
+  ]

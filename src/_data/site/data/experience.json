@@ -1,0 +1,120 @@
+[
+  {
+    "position": "Backend Engineer",
+    "include": true,
+    "company": "Square (Block)",
+    "start": "December 2022",
+    "end": "Present",
+    "description": [
+      "Working on the Hardware Shop team helping to make our online shop better.",
+      "Was part of the effort to bring payment plan functionality to two additional countries.",
+      "Helped implement subscription plan functionality for hardware and software bundles."
+    ],
+    "languages": [
+      "Ruby (Rails)",
+      "Javascript (React)",
+      "MySQL"
+    ]
+  },
+  {
+    "position": "Backend Web Engineer",
+    "include": true,
+    "company": "Linden Lab",
+    "start": "November 2018",
+    "end": "December 2022",
+    "description": [
+      "Implemented new features to allow users to self-service and reduce support load. They include account reactivation and partial payments.",
+      "Part of the effort to update our billing application to accommodate new payment service providers.",
+      "Led effort to migrate transactional emails to 3rd party service and update them from plaintext to HTML localized layouts.",
+      "Updated our team's web applications to record analytics metrics.",
+      "Contributed to the company's effort to Dockerize our team's multi-faceted web applications and migrate them to the AWS cloud.",
+      "Developed internal APIs leveraged by both our web applications and our Viewer desktop application related to MFA."
+    ],
+    "languages": [
+      "Python (Django)",
+      "PHP",
+      "Javascript",
+      "Ruby (Rails)",
+      "Perl",
+      "MySQL",
+      "Docker",
+      "AWS"
+    ]
+  },
+  {
+    "position": "Web Developer",
+    "include": true,
+    "company": "Brighton Collectibles",
+    "start": "July 2016",
+    "end": "November 2018",
+    "description": [
+      "Wrote document management system for document distribution to stores.",
+      "Designed and implemented media distribution application to enable Marketing to share social and printable media with partners.",
+      "Developed and maintained RESTful APIs that were critical to customer-facing and internal business applications.",
+      "Developed scripts for the sanitation and import of data into company databases as well as the processes to monitor them.",
+      "Contributed to the planning and design of database schema to ensure normalized data with flexibility to grow."
+    ],
+    "languages": [
+      "PHP",
+      "Javascript (Vue.js)",
+      "MySQL"
+    ]
+  },
+  {
+    "position": "NOC Technician & Developer",
+    "include": true,
+    "company": "Forever 21",
+    "start": "February 2015",
+    "end": "July 2016",
+    "description": [
+      "Developed NOC monitoring dashboard and backend to support applications.",
+      "Wrote server scripts that integrated 3rd party services into central monitoring.",
+      "Designed system for report generation of team performance metrics.",
+      "Administered Jira company-wide and implemented departments' project requirements."
+    ],
+    "languages": [
+      "C",
+      "Python",
+      "PHP",
+      "Javascript",
+      "MySQL"
+    ]
+  },
+  {
+    "position": "IT Technician",
+    "include": true,
+    "company": "Forever 21",
+    "start": "September 2014",
+    "end": "February 2015",
+    "description": [
+      "Remedied company-wide payment system outage by writing hotfix script deployed to 1000+ store servers in 500+ locations.",
+      "Wrote Windows application for Store Support team that partially automated ticket creation."
+    ],
+    "languages": [
+      "Batch",
+      "AutoIt"
+    ]
+  },
+  {
+    "position": "Teller",
+    "include": false,
+    "company": "Citibank, N.A.",
+    "start": "June 2013",
+    "end": "September 2014",
+    "description": [
+      "Exceeded customer service expectations based on customer service satisfaction surveys.",
+      "Lead the implementation of the new inventory management procedures."
+    ]
+  },
+  {
+    "position": "Desktop Technician",
+    "include": false,
+    "company": "Direct Wireless",
+    "start": "December 2010",
+    "end": "June 2013",
+    "description": [
+      "Sole technician and responsible for computer and phone repair/diagnostic.",
+      "Maintained in-store computers (internet-cafe) and implemented own system management method to reduce maintenance requirement."
+    ]
+  }
+]

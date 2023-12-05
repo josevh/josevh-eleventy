@@ -2,7 +2,7 @@
 title: File uploads and post-selection actions via Javascript
 excerpt: ''
 date: 2018-01-05T12:00:00.000
-tags:
+postTags:
   - vue.js
   - javascript
 lang: en

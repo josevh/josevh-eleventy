@@ -2,7 +2,7 @@
 title: Python Function Mutable Argument Default Value
 excerpt: "Unexpected gotcha when assigning an arg a dict value of a mutable type."
 date: 2021-12-15T08:00:00
-tags:
+postTags:
   - python
 lang: en
 ---

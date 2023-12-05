@@ -1,7 +1,7 @@
 ---
 title: Year In Brief
 excerpt: "A wrap up for the year."
-tags:
+postTags:
   - recap
 date: 2017-12-11T18:39:30
 lang: en

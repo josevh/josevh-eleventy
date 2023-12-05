@@ -2,7 +2,7 @@
 title: A Neat Python
 excerpt: ''
 date: 2019-06-20T12:00:00.000
-tags:
+postTags:
   - python
   - env
 lang: en

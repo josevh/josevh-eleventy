@@ -2,7 +2,7 @@
 title: Javascript Array Cloning and Object References
 excerpt: 'Copying, or cloning, an array of objects without the object references.'
 date: 2017-12-19T22:23:02
-tags:
+postTags:
   - javascript
   - vue
   - ES5

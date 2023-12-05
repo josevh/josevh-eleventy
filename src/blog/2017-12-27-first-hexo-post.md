@@ -2,7 +2,7 @@
 title: First Hexo Post!
 excerpt: 'First post after switching to Hexo.'
 date: 2017-12-27T12:00:00.000
-tags:
+postTags:
   - hexo
   - node
   - javascript

@@ -1,7 +1,7 @@
 ---
 title:  "Jekyll first post!"
 excerpt: "My first post. Built with Jekyll."
-tags:
+postTags:
   - jekyll
   - ssg
   - meta

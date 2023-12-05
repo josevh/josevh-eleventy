@@ -2,7 +2,7 @@
 title: Switching to Nuxt
 excerpt: ''
 date: 2018-10-03T12:00:00.000
-tags:
+postTags:
   - vue.js
   - nuxt
   - javascript

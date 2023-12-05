@@ -1,7 +1,7 @@
 ---
 title:  "Todoer: Android App"
 excerpt: "My first android application released!"
-tags:
+postTags:
   - android
   - java
 date:   2017-02-25 20:30:00

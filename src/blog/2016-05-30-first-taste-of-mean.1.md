@@ -1,7 +1,7 @@
 ---
 title:  "First taste of MEAN"
 excerpt: "Trying something new, the MEAN stack."
-tags:
+postTags:
   - mean
   - javascript
   - web

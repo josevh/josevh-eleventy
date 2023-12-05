@@ -2,7 +2,7 @@
 title: 'Back to Jekyll, For the Last Time'
 excerpt: 'This site went back to being powered by Jekyll, here''s why.'
 date: 2020-02-23T04:09:51.400Z
-tags:
+postTags:
   - jekyll
   - ruby
   - ssg

@@ -2,7 +2,7 @@
 title: PHP Inheritance and the __FILE__ Magic Constant
 excerpt: "How to solve a problem in PHP relating to inheritance and magic constants."
 date: 2017-12-11T18:09:30
-tags:
+postTags:
   - php
   - oop
 lang: en

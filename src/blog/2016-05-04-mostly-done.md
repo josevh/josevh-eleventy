@@ -2,7 +2,7 @@
 title:  "Mostly done"
 excerpt: "Site build updates."
 date:   2016-05-04 13:00:00
-tags:
+postTags:
   - meta
 lang: en
 carousel:

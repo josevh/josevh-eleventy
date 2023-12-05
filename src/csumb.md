@@ -5,14 +5,14 @@ permalink: /csumb/
 tags: page
 nav_include: true
 nav_order: 4
-images:
+pageImages:
   csumb_logo:
     url: /assets/uploads/csumb_otters_logo_white.jpg
     alt: CSUMB Otter logo
 ---
 ## Go otters!
 
-{% assign image=images.csumb_logo %}
+{% assign image=pageImages.csumb_logo %}
 {% include "img-thumb-centered.liquid" %}
 
 In 2021, I completed the Computer Science Online Degree Completion program at California State University Monterey Bay.

@@ -6,14 +6,15 @@ tags:
   - java
 date:   2017-02-25 20:30:00
 lang: en
-images:
+pageImages:
   icon:
     url: /assets/uploads/20170225-todoer-icon-min.png
     alt: Todoer icon
 ---
 Last month I released my first Android app: **Todoer**.
 
-{% include "img-thumb-centered.liquid" image=images.icon %}
+{% assign image=pageImages.icon %}
+{% include "img-thumb-centered.liquid" %}
 
 My new year's resolution for 2016: release an Android app.
 I decided at the beginning of 2016 that I needed to continue learning and that I needed a goal to strive towards. I registered a domain for development company, <a href="http://www.smallscreen.co" target="_blank">smallscreen.co</a>, and gave myself the opportunity to make it a domain that reflected my success or one that reminded me of my failure at the end of the year.

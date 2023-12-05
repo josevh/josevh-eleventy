@@ -8,7 +8,7 @@ tags:
   - ssg
   - meta
 lang: en
-images:
+pageImages:
   site:
     url: /assets/uploads/new-jekyll-blog.png
     alt: site screenshot
@@ -31,5 +31,6 @@ My intention is that this site change is the last one, going forward the focus w
 Here's to the future projects and blog posts, time to code.  😀
 
 **P.S.** For the record, the look of the blog at this point:
-{% set image=data.images.site %}
+
+{% assign image=pageImages.site %}
 {% include "img-thumb-centered.liquid" %}

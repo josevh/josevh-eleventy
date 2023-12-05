@@ -1,0 +1,87 @@
+---
+layout: "base.njk"
+---
+<div id="layout-post">
+    <div class="row post-heading mb-4">
+        <div class="col">
+            <h1 class="mb-0">{{ title }}</h1>
+            <small class="text-muted">{{ page.date | blog_date }}</small>
+        </div>
+    </div>
+
+    <div class="row post-content mb-4">
+        <div class="col">{{ content | safe }}</div>
+    </div>
+
+    {# @source: https://blog.webjeda.com/jekyll-related-posts/ #}
+    {% if page.tags.size > 0 %}
+        <div class="row post-related mb-4">
+            <div class="col">
+                <hr>
+                <h5 class="text-uppercase">Related</h5>
+                <div class="row">
+                    {% set maxRelated=3 %}
+                    {% set minCommonTags=1 %}
+                    {% set maxRelatedCounter=0 %}
+                    {% set maxRelatedReached=false %}
+
+                    {% for post in collections.post %}
+                        {% if not maxRelatedReached %}
+                            {% set sameTagCount=0 %}
+
+                            {% for tag in post.tags %}
+                                {% if post.url != page.url %}
+                                    {% if page.tags in tag %}
+                                        {# TODO: fix plus 1 #}
+                                        {# {% set sameTagCount=sameTagCount | plus: 1 %} #}
+                                        {% set sameTagCount=sameTagCount  %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if sameTagCount >= minCommonTags %}
+                                <div class="col-12 col-sm-4 mt-2"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                                {# TODO: fix plus 1 #}
+                                {# {% set maxRelatedCounter = maxRelatedCounter | plus: 1 %} #}
+                                {% set maxRelatedCounter=maxRelatedCounter %}
+
+                                {% if maxRelatedCounter >= maxRelated %}
+                                    {% set maxRelatedReached=true %}
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        {# hide related if none found #}
+        {% if maxRelatedCounter == 0 %}
+            <script>document.querySelectorAll('.post-related')
+                        .forEach(function(el) {
+                            el.style.display = 'none';
+                        });</script>
+        {% endif %}
+    {% endif %}
+
+    {% if page.previous or page.next %}
+        <hr class="bold dark">
+        <div class="row pt-2">
+            <div class="col">
+                {% if page.previous %}
+                    <h5 class="text-uppercase">Previous</h5>
+                    <div class="mt-3"><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></div>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+            <div class="col text-right">
+                {% if page.next %}
+                    <h5 class="text-uppercase">Next</h5>
+                    <div class="mt-3"><a href="{{ page.next.url }}">{{ page.next.title }}</a></div>
+                {% else %}
+                    &nbsp;
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+</div>

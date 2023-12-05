@@ -33,6 +33,28 @@ module.exports = function(eleventyConfig) {
       return (new Date()).toLocaleDateString('en-US', {year: "numeric"}).toString();
     });
 
+    eleventyConfig.addFilter("blog_date", function (dateValue) {
+      return dateValue.toLocaleDateString("en-US", {
+        year: 'numeric',
+        month: 'short',
+        day: '2-digit',
+      });
+    });
+
+    eleventyConfig.addFilter("date_year", function(dateValue) {
+      return dateValue.toLocaleDateString("en-US", {
+        year: "numeric",
+      });
+    });
+
+    eleventyConfig.addFilter("date_month", function(dateValue) {
+      return dateValue.toLocaleDateString("en-US", {
+        month: "2-digit",
+      });
+    });
+
+    eleventyConfig.amendLibrary("md", mdLib => mdLib.enable("code"));
+
     return {
         dir: {
           input: "src",

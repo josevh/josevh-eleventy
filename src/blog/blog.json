@@ -1,4 +1,5 @@
 {
-    "layout": "base.njk",
-    "tags": ["post"]
+    "layout": "post.njk",
+    "tags": ["post"],
+    "permalink": "{{ page.date | date_year }}/{{ page.date | date_month }}/{{ title | slugify }}"
 }

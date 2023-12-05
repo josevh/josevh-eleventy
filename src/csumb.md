@@ -12,8 +12,8 @@ images:
 ---
 ## Go otters!
 
-{% set image="page.images.csumb_logo" %}
-{% include "img-thumb-centered.njk" %}
+{% assign image=images.csumb_logo %}
+{% include "img-thumb-centered.liquid" %}
 
 In 2021, I completed the Computer Science Online Degree Completion program at California State University Monterey Bay.
 In my time there, I was able to learn about the intricacies of computer systems as well as development
@@ -22,6 +22,7 @@ we may face in this career. All in all, it was a great experience which I feel h
 
 As part of my coursework I put together the following:
 
+| | |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **[Weekly Learning Journal](https://journal.csumb.josevh.com/)**  | A place to keep track of the things I've learned on a week-to-week basis. |
 | **[Portfolio](https://portfolio.csumb.josevh.com)**               | A place to showcase my major pieces of coursework per course.             |

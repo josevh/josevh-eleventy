@@ -3,7 +3,7 @@ const sass = require("sass");
 
 module.exports = function(eleventyConfig) {
     // assets setup
-    eleventyConfig.addPassthroughCopy("src/assets/css");
+    eleventyConfig.addPassthroughCopy("src/assets");
 
     // sass/scss setup
     // add as a valid template language to process, e.g. this adds to --formats

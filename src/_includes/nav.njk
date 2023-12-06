@@ -27,11 +27,18 @@
           <span class="country-name notranslate">{{ page.lang | upper }}</span>
         </a>
         <div class="dropdown-menu">
-          {%- for link in page.url | locale_links -%}
+          {%- set links=page.url|locale_links -%}
+          {%- for link in links -%}
             <a class="dropdown-item" href="{{ link.url }}">
               <span class="country-name notranslate">{{ link.lang | upper }} - {{ link.label }}</span>
             </a>
           {%- endfor -%}
+          {# Handle pages with no translation, offer Spanish homepage. Hard-coded, yikes. #}
+          {%- if links.length == 0 -%}
+            <a href="/es" class="dropdown-item">
+              <span class="country-name notranslate">ES - Español</span>
+            </a>
+          {%- endif -%}
         </div>
       </li>
     </ul>

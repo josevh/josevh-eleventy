@@ -5,7 +5,7 @@ layout: "base.njk"
     <div class="row post-heading mb-4">
         <div class="col">
             <h1 class="mb-0">{{ title }}</h1>
-            <small class="text-muted">{{ page.date | blog_date }}</small>
+            <small class="text-muted">{{ page.date | blog_date(page.lang) }}</small>
         </div>
     </div>
 

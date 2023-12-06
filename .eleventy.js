@@ -40,8 +40,9 @@ module.exports = function(eleventyConfig) {
       return (new Date()).toLocaleDateString('en-US', {year: "numeric"}).toString();
     });
 
-    eleventyConfig.addFilter("blog_date", function (dateValue) {
-      return dateValue.toLocaleDateString("en-US", {
+    eleventyConfig.addFilter("blog_date", function (dateValue, pageLang) {
+      const locale = "US";
+      return dateValue.toLocaleDateString(`${pageLang}-${locale}`, {
         year: 'numeric',
         month: 'short',
         day: '2-digit',

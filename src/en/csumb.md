@@ -1,7 +1,6 @@
 ---
 layout: "page.njk"
 title: CSUMB
-permalink: /csumb/
 tags: page
 nav_include: true
 nav_order: 4

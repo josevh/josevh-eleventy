@@ -2,13 +2,11 @@
 layout: "page.njk"
 title: Experience
 tags: page
-lang: en
 nav_include: true
 nav_order: 3
 ---
 <div class="list-group">
-    {% set jobs = site.data.experience %}
-    <!-- where include:true -->
+    {% set jobs = site[page.lang].experience %}
     {%- for job in jobs -%}
         {%- if job.include -%}
         <div class="list-group-item job mb-2">
@@ -43,12 +41,12 @@ nav_order: 3
     {%- endfor -%}
 </div>
 
-{% if site.data.education.length > 0 %}
+{% if site[page.lang].education.length > 0 %}
 <div class="mt-5">
     <h1 class="mb-4">Education</h1>
 
     <div class="list-group">
-        {%- for edu in site.data.education -%}
+        {%- for edu in site[page.lang].education -%}
         <div class="list-group-item edu mb-2">
             <h3>{{ edu.school }}</h3>
 

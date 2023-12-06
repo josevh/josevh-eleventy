@@ -1,0 +1,30 @@
+---
+layout: "page.njk"
+title: Projects
+tags: page
+nav_include: false
+nav_order: 1
+---
+{# TODO:
+  - Get langs used in project directly from github API?
+    - plugin: jekyll-get-json
+    - alternate: list languages a-la tags #}
+
+<div class="list-group">
+    {% for project in collections.project|sort(attribute="data.sort_order") %}
+    <div class="list-group-item mb-2">
+        <div class="heading d-flex w-100 justify-content-between">
+            <h3>{{ project.data.title }}</h3>
+            {% if project.data.link %}
+            <div class="text-right align-self-center font-headings"><a href="{{ project.data.link.url }}" target="_blank">{{ project.data.link.text }}</a></div>
+            {% endif %}
+        </div>
+
+        <hr />
+
+        <div class="content">
+            <p>{{ project.data.short_description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

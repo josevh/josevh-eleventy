@@ -1,0 +1,24 @@
+[
+    {
+      "school": "Universidad Estatal de California, Bahía de Monterey (CSUMB)",
+      "degrees": [
+        {
+          "name": "Licenciatura en Ciencias en Informática",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "school": "Colegio de la ciudad de Los Ángeles",
+      "degrees": [
+        {
+          "name": "Asociado en Ciencias en Informática",
+          "year": 2018
+        },
+        {
+          "name": "Asociado en Artes en Sistemas Informaticos",
+          "year": 2016
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,12 @@
+# From https://www.11ty.dev/docs/i18n/#distinct-urls-using-implied-default-language
+
+# Redirect any URLs with the language code in them already
+/en/*   /:splat     301!
+
+# Important: Per shadowing rules, URLs for the
+# _non-default_ language-specific content files
+# are served without redirects.
+
+# Redirect for end-user’s browser preference override
+/*      /es/:splat  302   Language=es
+/*      /en/:splat  200

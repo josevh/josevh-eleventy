@@ -1,5 +1,6 @@
+{# TODO: navbar links should be lang-specific #}
 <nav class="navbar navbar-light bg-light navbar-expand-md px-0">
-  <a class="navbar-brand" href="{{ '/' | url }}">{{ site.title }}</a>
+  <a class="navbar-brand" href="{{ '/' | locale_url }}">{{ site[page.lang].title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,7 +9,7 @@
     <ul class="navbar-nav">
       {# Automatic nav items from pages #}
       {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
-        {% if nav_page.data.nav_include %}
+        {% if nav_page.data.nav_include and page.lang == nav_page.data.pageLang %}
           <li class="nav-item {% if nav_page.url in page.url %}active{% endif %}">
             <a
               class="nav-link"
@@ -23,29 +24,14 @@
     <ul class="nav navbar-nav language-nav ml-auto">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          {%- set active_lang_full = site.data.general.language.full[site.active_lang] -%}
-          <span class="country-name notranslate">{{ site.active_lang | upper }}</span>
+          <span class="country-name notranslate">{{ page.lang | upper }}</span>
         </a>
         <div class="dropdown-menu">
-          {% for language in site.languages %}
-            {% if language != site.active_lang %}
-              {%- set lang_href -%}
-                {%- if language == site.default_lang -%}
-                  {{site.baseurl}}{{page.url}}
-                {%- else -%}
-                  {{site.baseurl}}/{{ language }}{{page.url}}
-                {%- endif -%}
-              {%- endset -%}
-              {%- set language_full = site.data.general.language.full[language] -%}
-
-              <a
-                class="dropdown-item"
-                href="{{ lang_href }}"
-              >
-                <span class="country-name notranslate">{{ language | upper }} - {{ language_full }}</span>
-              </a>
-            {% endif %}
-          {% endfor %}
+          {%- for link in page.url | locale_links -%}
+            <a class="dropdown-item" href="{{ link.url }}">
+              <span class="country-name notranslate">{{ link.lang | upper }} - {{ link.label }}</span>
+            </a>
+          {%- endfor -%}
         </div>
       </li>
     </ul>

@@ -1,7 +1,6 @@
 ---
 layout: "base.njk"
 tags: page
-lang: en
 ---
 <div class="headline mb-4"><h1>Web Developer. Application Developer.<br />Technology enthusiast.</h1></div>
 

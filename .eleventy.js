@@ -1,9 +1,16 @@
 const path = require("node:path");
 const sass = require("sass");
+const { EleventyI18nPlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
     // assets setup
     eleventyConfig.addPassthroughCopy("src/assets");
+
+    // i18n setup
+    eleventyConfig.addPlugin(EleventyI18nPlugin, {
+      // any valid BCP 47-compatible language tag is supported
+      defaultLanguage: "en", // Required, this site uses "en"
+    });
 
     // sass/scss setup
     // add as a valid template language to process, e.g. this adds to --formats
@@ -54,6 +61,9 @@ module.exports = function(eleventyConfig) {
     });
 
     eleventyConfig.amendLibrary("md", mdLib => mdLib.enable("code"));
+
+    // If we use Netlify and has the _redirects file.
+    eleventyConfig.addPassthroughCopy("_redirects");
 
     return {
         dir: {

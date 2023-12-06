@@ -1,0 +1,120 @@
+[
+    {
+      "position": "Ingeniero Backend",
+      "include": true,
+      "company": "Square (Block)",
+      "start": "diciembre 2022",
+      "end": "presente",
+      "description": [
+        "Trabajo en el equipo Hardware Shop mejorando nuestra tienda en línea.",
+        "Fui parte del esfuerzo para introducir planes de pago a dos países adicionales.",
+        "Ayudé a implementar planes de subscripcion para paquetes de hardware y software."
+      ],
+      "languages": [
+        "Ruby (Rails)",
+        "Javascript (React)",
+        "MySQL"
+      ]
+    },
+    {
+      "position": "Ingeniero Backend",
+      "include": true,
+      "company": "Linden Lab",
+      "start": "noviembre 2018",
+      "end": "diciembre 2022",
+      "description": [
+        "Implementé nuevas funciones para permitir a los usuarios el autoservicio y reducir la carga del equipo de soporte. Incluyendo reactivación de cuenta y pagos parciales.",
+        "Fui parte del esfuerzo por actualizar nuestra aplicación de facturación para adaptarse a los nuevos proveedores de servicios de pago.",
+        "Dirigí el esfuerzo para migrar mesajes de correo electrónicos transaccionales a un servicio externo y actualizar el contenido de texto sin formato a diseños HTML localizados.",
+        "Actualicé las aplicaciones web de nuestro equipo para registrar métricas de análisis.",
+        "Contribuí al esfuerzo de la empresa para convertir las aplicaciones web multifacéticas de nuestro equipo para utiliza Docker y migrarlas a la nube de AWS.",
+        "Desarrollé API internas aprovechadas tanto por nuestras aplicaciones web como por nuestra aplicación de escritorio Viewer relacionadas con AMF."
+      ],
+      "languages": [
+        "Python",
+        "PHP",
+        "Javascript",
+        "Ruby",
+        "Perl",
+        "MySQL",
+        "Docker",
+        "AWS"
+      ]
+    },
+    {
+      "position": "Desarrollador Web",
+      "include": true,
+      "company": "Brighton Collectibles",
+      "start": "julio 2016",
+      "end": "noviembre 2018",
+      "description": [
+        "Escribí el sistema de gestión de documentos para la distribución de documentos a las tiendas clientes.",
+        "Diseñé e implementé una aplicación de distribución de medios para permitir que el dpto. de Marketing comparta medios sociales e imprimibles con socios.",
+        "Desarrollé y mantuve las API REST que eran críticas para las aplicaciones comerciales internas y de cara al cliente.",
+        "Desarrollé scripts para el saneamiento e importación de datos a las bases de datos de la empresa, así como los procesos para monitorearlos.",
+        "Contribuí a la planificación y diseño del esquema de la base de datos para garantizar datos normalizados con flexibilidad para crecer."
+      ],
+      "languages": [
+        "PHP",
+        "Javascript",
+        "MySQL"
+      ]
+    },
+    {
+      "position": "Técnico y desarrollador NOC",
+      "include": true,
+      "company": "Forever 21",
+      "start": "febrero 2015",
+      "end": "julio 2016",
+      "description": [
+        "Desarrollé el panel de monitoreo de NOC y el backend para soportar aplicaciones.",
+        "Escribí scripts de servidor que integraron servicios de terceros en el monitoreo central.",
+        "Diseño de sistema para la generación de reportes de métricas de desempeño del equipo.",
+        "Administré Jira en toda la empresa e implementé los requisitos del proyecto de los departamentos."
+      ],
+      "languages": [
+        "C",
+        "Python",
+        "PHP",
+        "Javascript",
+        "MySQL"
+      ]
+    },
+    {
+      "position": "Técnico IT",
+      "include": true,
+      "company": "Forever 21",
+      "start": "septiembre 2014",
+      "end": "febrero 2015",
+      "description": [
+        "Se solucionó la interrupción del sistema de pago en toda la empresa mediante mi escritura de un script implementado en más de 1000 servidores de tiendas en más de 500 ubicaciones.",
+        "Escribí una aplicación de Windows para el equipo de soporte de las tiendas que automatizó parcialmente la creación de tickets."
+      ],
+      "languages": [
+        "Batch",
+        "AutoIt"
+      ]
+    },
+    {
+      "position": "Cajero",
+      "include": false,
+      "company": "Citibank, N.A.",
+      "start": "junio 2013",
+      "end": "septiembre 2014",
+      "description": [
+        "Superé las expectativas de servicio al cliente según las encuestas de satisfacción del servicio al cliente.",
+        "Lideré la implementación de los nuevos procedimientos de gestión de inventarios."
+      ]
+    },
+    {
+      "position": "Técnico de computadoras",
+      "include": false,
+      "company": "Direct Wireless",
+      "start": "diciembre 2010",
+      "end": "junio 2013",
+      "description": [
+        "Técnico único y responsable de la reparación/diagnóstico de ordenadores y teléfonos.",
+        "Mantuve las computadoras en la tienda (internet-café) e implementé un método de administración del sistema propio para reducir los requisitos de mantenimiento."
+      ]
+    }
+  ]

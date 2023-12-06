@@ -1,12 +1,3 @@
-# josevh
+# josevh.com
 
-## Quick start
-```bash
-$ echo '# Page header' > README.md
-$ eleventy
-```
-
-## Dev
-```bash
-$ eleventy --serve
-```
+My personal website made using Jekyll.

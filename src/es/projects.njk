@@ -5,11 +5,6 @@ tags: page
 nav_include: false
 nav_order: 1
 ---
-{# TODO:
-  - Get langs used in project directly from github API?
-    - plugin: jekyll-get-json
-    - alternate: list languages a-la tags #}
-
 <div class="list-group">
     {% for project in collections.project|sort(attribute="data.sort_order") %}
     <div class="list-group-item mb-2">

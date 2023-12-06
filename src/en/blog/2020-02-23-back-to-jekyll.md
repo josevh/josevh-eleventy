@@ -7,7 +7,6 @@ postTags:
   - ruby
   - ssg
   - meta
-lang: en
 pageImages:
   site:
     url: /assets/uploads/new-jekyll-blog.png

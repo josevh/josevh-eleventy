@@ -34,7 +34,7 @@
             </a>
           {%- endfor -%}
           {# Handle pages with no translation, offer Spanish homepage. Hard-coded, yikes. #}
-          {%- if links.length == 0 -%}
+          {%- if links.length == 0 and page.lang == 'en' -%}
             <a href="/es" class="dropdown-item">
               <span class="country-name notranslate">ES - Español</span>
             </a>

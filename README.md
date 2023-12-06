@@ -1,3 +1,3 @@
 # josevh.com
 
-My personal website made using Jekyll.
+My personal website made using Eleventy.

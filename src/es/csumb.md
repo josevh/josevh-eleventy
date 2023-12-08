@@ -1,5 +1,5 @@
 ---
-layout: "page.njk"
+layout: "_layouts/page.njk"
 title: CSUMB
 tags: page
 nav_include: true
@@ -12,7 +12,7 @@ pageImages:
 ## ¡Vamos nutrias!
 
 {% assign image=pageImages.csumb_logo %}
-{% include "img-thumb-centered.liquid" %}
+{% include "_components/img-thumb-centered.liquid" %}
 
 En 2021, completé el programa de finalización de la licenciatura en ciencias en informática en línea en la Universidad Estatal de California, Bahía de Monterey.
 En mi tiempo allí, pude aprender sobre las complejidades de los sistemas informáticos, así como el desarrollo en varios lenguajes de programación y frameworks.

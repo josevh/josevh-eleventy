@@ -32,4 +32,4 @@ Here's to the future projects and blog posts, time to code.  😀
 **P.S.** For the record, the look of the blog at this point:
 
 {% assign image=pageImages.site %}
-{% include "img-thumb-centered.liquid" %}
+{% include "_components/img-thumb-centered.liquid" %}

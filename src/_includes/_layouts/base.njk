@@ -1,22 +1,22 @@
 <!doctype html>
 <html lang="{{ page.lang }}-US" dir="ltr">
-  {%- include "head.njk" -%}
+  {%- include "_partials/head.njk" -%}
   <body>
     <div class="container my-4">
       <div class="row justify-content-center mb-4">
         <div class="col-sm-12 col-md-10 col-lg-7">
-          {%- include "nav.njk" -%}
+          {%- include "_partials/nav.njk" -%}
         </div>
       </div>
       <div class="row justify-content-center content-wrapper">
         <div class="col-sm-12 col-md-10 col-lg-7">
           {{ content | safe }}
 
-          {%- include "footer.njk" -%}
+          {%- include "_partials/footer.njk" -%}
         </div>
       </div>
     </div>
 
-    {%- include "footer-scripts.njk" -%}
+    {%- include "_partials/footer-scripts.njk" -%}
   </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: "base.njk"
+layout: "_layouts/base.njk"
 tags: page
 ---
 <div class="headline mb-4"><h1>Desarrollador Web. Desarrollador de Aplicaciones.<br />Entusiasta de Tecnología.</h1></div>

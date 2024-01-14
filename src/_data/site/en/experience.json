@@ -3,6 +3,7 @@
     "position": "Backend Engineer",
     "include": true,
     "company": "Square (Block)",
+    "location": "San Francisco, CA (Remote)",
     "start": "December 2022",
     "end": "Present",
     "description": [
@@ -20,6 +21,7 @@
     "position": "Backend Web Engineer",
     "include": true,
     "company": "Linden Lab",
+    "location": "San Francisco, CA (Remote)",
     "start": "November 2018",
     "end": "December 2022",
     "description": [
@@ -45,6 +47,7 @@
     "position": "Web Developer",
     "include": true,
     "company": "Brighton Collectibles",
+    "location": "City of Industry, CA",
     "start": "July 2016",
     "end": "November 2018",
     "description": [
@@ -64,6 +67,7 @@
     "position": "NOC Technician & Developer",
     "include": true,
     "company": "Forever 21",
+    "location": "Los Angeles, CA",
     "start": "February 2015",
     "end": "July 2016",
     "description": [
@@ -84,6 +88,7 @@
     "position": "IT Technician",
     "include": true,
     "company": "Forever 21",
+    "location": "Los Angeles, CA",
     "start": "September 2014",
     "end": "February 2015",
     "description": [
@@ -99,6 +104,7 @@
     "position": "Teller",
     "include": false,
     "company": "Citibank, N.A.",
+    "location": "Los Angeles, CA",
     "start": "June 2013",
     "end": "September 2014",
     "description": [
@@ -110,6 +116,7 @@
     "position": "Desktop Technician",
     "include": false,
     "company": "Direct Wireless",
+    "location": "Los Angeles, CA",
     "start": "December 2010",
     "end": "June 2013",
     "description": [

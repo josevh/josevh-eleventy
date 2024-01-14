@@ -3,6 +3,7 @@
       "position": "Ingeniero Backend",
       "include": true,
       "company": "Square (Block)",
+      "location": "San Francisco, CA (Remote)",
       "start": "diciembre 2022",
       "end": "presente",
       "description": [
@@ -20,6 +21,7 @@
       "position": "Ingeniero Backend",
       "include": true,
       "company": "Linden Lab",
+      "location": "San Francisco, CA (Remote)",
       "start": "noviembre 2018",
       "end": "diciembre 2022",
       "description": [
@@ -45,6 +47,7 @@
       "position": "Desarrollador Web",
       "include": true,
       "company": "Brighton Collectibles",
+      "location": "City of Industry, CA",
       "start": "julio 2016",
       "end": "noviembre 2018",
       "description": [
@@ -64,6 +67,7 @@
       "position": "Técnico y desarrollador NOC",
       "include": true,
       "company": "Forever 21",
+      "location": "Los Angeles, CA",
       "start": "febrero 2015",
       "end": "julio 2016",
       "description": [
@@ -84,6 +88,7 @@
       "position": "Técnico IT",
       "include": true,
       "company": "Forever 21",
+      "location": "Los Angeles, CA",
       "start": "septiembre 2014",
       "end": "febrero 2015",
       "description": [
@@ -110,6 +115,7 @@
       "position": "Técnico de computadoras",
       "include": false,
       "company": "Direct Wireless",
+      "location": "Los Angeles, CA",
       "start": "diciembre 2010",
       "end": "junio 2013",
       "description": [

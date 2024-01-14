@@ -12,7 +12,9 @@ nav_order: 3
         <div class="list-group-item job mb-2">
             <div class="heading">
                 <h3>{{ job.position }} <small class="text-muted">{{ job.company }}</small></h3>
-                <div class="font-headings small">{{ job.start }} - {{ job.end }}</div>
+                <div class="font-headings small">
+                    {{ job.start }} - {{ job.end }} | {{ job.location }}
+                </div>
             </div>
 
             <div class="content">

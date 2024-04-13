@@ -1,4 +1,5 @@
 ---
+title: josevh.com
 layout: "_layouts/base.njk"
 tags: page
 ---

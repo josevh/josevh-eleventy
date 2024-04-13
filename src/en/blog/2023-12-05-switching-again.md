@@ -7,6 +7,7 @@ postTags:
   - eleventy
   - ssg
   - meta
+lang: en
 ---
 I don't write these blog posts often and I lament that a good portion of them
 are about switching the static site generator used to generate this site. Work

@@ -66,6 +66,9 @@ module.exports = function(eleventyConfig) {
     // If we use Netlify and has the _redirects file.
     eleventyConfig.addPassthroughCopy("_redirects");
 
+    // DecapCMS (formerly Netlify CMS)
+    eleventyConfig.addPassthroughCopy("src/en/admin");
+
     return {
         dir: {
           input: "src",

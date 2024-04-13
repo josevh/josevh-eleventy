@@ -22,6 +22,6 @@ collections:
       - {label: "Description", name: "excerpt", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Tags", name: "postTags", widget: "list", required: false}
-      - {label: "Language", name: "lang", widget: "select", default: "en", options: ["en", "es"]}
+      - {label: "Language", name: "pageLang", widget: "select", default: "en", options: ["en", "es"]}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

@@ -5,7 +5,7 @@ date: 2018-01-05T12:00:00.000
 postTags:
   - vue.js
   - javascript
-lang: en
+pageLang: en
 ---
 ## Context
 I needed to select multiple files for upload but assign different attributes to each before posting. For example, the attribute I needed to set was the file's category (social, marketing, etc.). I wanted to be able to select multiple files, set their categories, then post the data and files.

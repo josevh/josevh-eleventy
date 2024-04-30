@@ -1,10 +1,10 @@
 ---
-title:  "Todoer: Android App"
-excerpt: "My first android application released!"
+title: "Todoer: Android App"
+excerpt: My first android application released!
+date: 2017-02-25 20:30:00
 postTags:
   - android
   - java
-date:   2017-02-25 20:30:00
 pageLang: en
 pageImages:
   icon:
@@ -13,8 +13,7 @@ pageImages:
 ---
 Last month I released my first Android app: **Todoer**.
 
-{% assign image=pageImages.icon %}
-{% include "_components/img-thumb-centered.liquid" %}
+<img src="/assets/uploads/20170225-todoer-icon-min.png" alt="Todoer Icon" title="Todoer Icon" class="d-block mx-auto"/>
 
 My new year's resolution for 2016: release an Android app.
 I decided at the beginning of 2016 that I needed to continue learning and that I needed a goal to strive towards. I registered a domain for development company, <a href="http://www.smallscreen.co" target="_blank">smallscreen.co</a>, and gave myself the opportunity to make it a domain that reflected my success or one that reminded me of my failure at the end of the year.
@@ -23,19 +22,20 @@ As my first Android project I chose a simple, tried and true, todo-list app.
 The app is a result of ideas taken from tutorials and questions answered on Stack Overflow. This project required me to take a step outside of my comfort zone, PHP web developing, and embrace a whole new environment with its own quirks and requirements.
 
 #### Version 1.0 Goals:
+
 1. Release *an* Android app (ha!)
 2. Use database to drive the app
 3. Use Android notifications for reminders
 4. Make use of Android preferences
 
 I wanted to release an app to begin familiarizing with the Android environment.
-Currently, I am most comfortable developing for web but it is not necessarily what I'd like to be doing indefinitely. Android use of Java and XML felt strange to me now having worked with ```PHP``` and ```HTML```/```CSS``` for so long. There is a learning curve, on which I am still on, to get a handle on how Android's activities and layouts relate. Knowing that things will be different, however, is half the battle.
+Currently, I am most comfortable developing for web but it is not necessarily what I'd like to be doing indefinitely. Android use of Java and XML felt strange to me now having worked with `PHP` and `HTML`/`CSS` for so long. There is a learning curve, on which I am still on, to get a handle on how Android's activities and layouts relate. Knowing that things will be different, however, is half the battle.
 
 #### The Easy Stuff
 
 The app code is simple and does simple things.
 
-The app is driven by a ```sqlite``` database which stores all the todos. Fortunately, Android provides sqlite helpers that make interacting with the database a breeze. Being comfortable with database structure and design, this part of the app development was the least stressful.
+The app is driven by a `sqlite` database which stores all the todos. Fortunately, Android provides sqlite helpers that make interacting with the database a breeze. Being comfortable with database structure and design, this part of the app development was the least stressful.
 
 #### The Not-So-Easy Stuff
 
@@ -57,5 +57,6 @@ Next on the horizon, I am in the planning stages of a new android app that will 
 
 Hopefully I have lots to write about going forward.
 
-<img src="/assets/uploads/20170225-todoer-screenshot-1-min.png" alt="Todoer Icon" style="width: 150px; display: inline-block;" />
-<img src="/assets/uploads/20170225-todoer-screenshot-2-min.png" alt="Todoer Icon" style="width: 150px; display: inline-block;" />
+<img src="/assets/uploads/20170225-todoer-screenshot-1-min.png" alt="Todoer screenshot 1" title="Todoer screenshot 1" class="d-inline-block w-25"/>
+
+<img src="/assets/uploads/20170225-todoer-screenshot-2-min.png" alt="Todoer screenshot 2" title="Todoer screenshot 2" class="d-inline-block w-25"/>

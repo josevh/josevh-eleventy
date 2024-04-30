@@ -11,8 +11,7 @@ pageImages:
 ---
 ## Go otters!
 
-{% assign image=pageImages.csumb_logo %}
-{% include "_components/img-thumb-centered.liquid" %}
+<img src="{{pageImages.csumb_logo.url}}" alt="{{pageImages.csumb_logo.alt}}" class="d-block mx-auto img-thumbnail">
 
 In 2021, I completed the Computer Science Online Degree Completion program at California State University Monterey Bay.
 In my time there, I was able to learn about the intricacies of computer systems as well as development

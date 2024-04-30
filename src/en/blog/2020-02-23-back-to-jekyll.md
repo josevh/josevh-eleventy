@@ -1,6 +1,6 @@
 ---
-title: 'Back to Jekyll, For the Last Time'
-excerpt: 'This site went back to being powered by Jekyll, here''s why.'
+title: Back to Jekyll, For the Last Time
+excerpt: This site went back to being powered by Jekyll, here's why.
 date: 2020-02-23T04:09:51.400Z
 postTags:
   - jekyll
@@ -32,5 +32,4 @@ Here's to the future projects and blog posts, time to code.  😀
 
 **P.S.** For the record, the look of the blog at this point:
 
-{% assign image=pageImages.site %}
-{% include "_components/img-thumb-centered.liquid" %}
+<img src="/assets/uploads/new-jekyll-blog.png" alt="Website screenshot" title="New Jekyll Blog" class="d-block mx-auto"/>

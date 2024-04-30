@@ -11,8 +11,7 @@ pageImages:
 ---
 ## ¡Vamos nutrias!
 
-{% assign image=pageImages.csumb_logo %}
-{% include "_components/img-thumb-centered.liquid" %}
+<img src="{{pageImages.csumb_logo.url}}" alt="{{pageImages.csumb_logo.alt}}" class="d-block mx-auto img-thumbnail">
 
 En 2021, completé el programa de finalización de la licenciatura en ciencias en informática en línea en la Universidad Estatal de California, Bahía de Monterey.
 En mi tiempo allí, pude aprender sobre las complejidades de los sistemas informáticos, así como el desarrollo en varios lenguajes de programación y frameworks.

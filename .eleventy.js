@@ -67,7 +67,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("_redirects");
 
     // DecapCMS (formerly Netlify CMS)
-    eleventyConfig.addPassthroughCopy("src/en/admin");
+    eleventyConfig.addPassthroughCopy("src/admin");
 
     return {
         dir: {

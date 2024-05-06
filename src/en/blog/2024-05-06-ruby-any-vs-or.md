@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Ruby `#any` vs `or`
 excerpt: Recently ran into a bug where using simple `or` statements would have
   avoided the whole issue.

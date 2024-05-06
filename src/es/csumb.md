@@ -1,5 +1,5 @@
 ---
-layout: "_layouts/page.njk"
+layout: "page"
 title: CSUMB
 tags: page
 nav_include: true

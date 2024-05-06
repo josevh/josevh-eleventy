@@ -1,6 +1,6 @@
 ---
+layout: "base"
 title: josevh.com
-layout: "_layouts/base.njk"
 tags: page
 ---
 <div class="headline mb-4"><h1>Web Developer. Application Developer.<br />Technology enthusiast.</h1></div>

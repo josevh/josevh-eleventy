@@ -63,6 +63,11 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.amendLibrary("md", mdLib => mdLib.enable("code"));
 
+    // Add layout aliases
+    eleventyConfig.addLayoutAlias("base", "_layouts/base.njk")
+    eleventyConfig.addLayoutAlias("page", "_layouts/page.njk")
+    eleventyConfig.addLayoutAlias("post", "_layouts/post.njk")
+
     // If we use Netlify and has the _redirects file.
     eleventyConfig.addPassthroughCopy("_redirects");
 

@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(EleventyI18nPlugin, {
       // any valid BCP 47-compatible language tag is supported
       defaultLanguage: "en", // Required, this site uses "en"
+      errorMode: "allow-fallback", // only throw an error when the content doesn't exist in default lang
     });
 
     // sass/scss setup
@@ -26,7 +27,7 @@ module.exports = function(eleventyConfig) {
         let result = sass.compileString(inputContent, {
           loadPaths: [
             parsed.dir || ".",
-            this.config.dir.includes
+            this.config.dir.includes,
           ]
         });
 
@@ -73,6 +74,10 @@ module.exports = function(eleventyConfig) {
 
     // DecapCMS (formerly Netlify CMS)
     eleventyConfig.addPassthroughCopy("src/admin");
+
+    eleventyConfig.setServerOptions({
+      showAllHosts: true,
+    });
 
     return {
         dir: {

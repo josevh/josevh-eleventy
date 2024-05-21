@@ -3,7 +3,7 @@ title: Ruby `#any` vs `or`
 excerpt: Recently ran into a bug where using simple `or` statements would have
   avoided the whole issue.
 date: 2024-05-06T09:27:00.000Z
-pageLang: en
+lang: en
 ---
 ### The Problem
 

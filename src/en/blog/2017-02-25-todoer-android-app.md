@@ -5,7 +5,7 @@ date: 2017-02-25 20:30:00
 postTags:
   - android
   - java
-pageLang: en
+lang: en
 pageImages:
   icon:
     url: /assets/uploads/20170225-todoer-icon-min.png

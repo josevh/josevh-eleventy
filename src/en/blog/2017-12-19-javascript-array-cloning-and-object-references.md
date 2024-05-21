@@ -7,7 +7,7 @@ postTags:
   - vue
   - ES5
   - vue.js
-pageLang: en
+lang: en
 ---
 I recently ran into a problem with Javascript, arrays of objects, and those objects' references.
 

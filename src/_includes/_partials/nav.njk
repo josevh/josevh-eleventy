@@ -8,7 +8,7 @@
     <ul class="navbar-nav">
       {# Automatic nav items from pages #}
       {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
-        {% if nav_page.data.nav_include and page.lang == nav_page.data.pageLang %}
+        {% if nav_page.data.nav_include and page.lang == nav_page.data.lang %}
           <li class="nav-item {% if nav_page.url in page.url %}active{% endif %}">
             <a
               class="nav-link"

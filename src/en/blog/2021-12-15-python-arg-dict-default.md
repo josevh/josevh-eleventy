@@ -4,7 +4,7 @@ excerpt: "Unexpected gotcha when assigning an arg a dict value of a mutable type
 date: 2021-12-15T08:00:00
 postTags:
   - python
-pageLang: en
+lang: en
 ---
 
 This issue was brought up to me in a conversation with my manager and I thought

@@ -11,7 +11,7 @@ pageImages:
   site:
     url: /assets/uploads/new-jekyll-blog.png
     alt: site screenshot
-pageLang: en
+lang: en
 ---
 Almost half the blog posts here are meta posts about the site itself. I want that to change. To that end, here's the last blog post about the site for, hopefully, a long time.
 

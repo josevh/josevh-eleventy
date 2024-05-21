@@ -8,7 +8,7 @@ postTags:
   - javascript
   - meta
   - ssg
-pageLang: en
+lang: en
 ---
 First post after switching to **Hexo**.
 

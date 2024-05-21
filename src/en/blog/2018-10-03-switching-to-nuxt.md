@@ -8,7 +8,7 @@ postTags:
   - javascript
   - meta
   - ssg
-pageLang: en
+lang: en
 ---
 ## Why
 I had been wanting to rewrite this site for a good while.

@@ -42,4 +42,4 @@ I'm liking Jekyll, it's just flexible enough for a low-effort project.
 I'll include a few screenshots in case I update it later and want to look back on this.
 
 {% assign images=carousel.images %}
-{% include "components/carousel.liquid" %}
+{% include "components/carousel.njk" %}

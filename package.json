@@ -21,6 +21,7 @@
   "homepage": "https://gitlab.com/josevh/josevh-eleventy#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "sass": "^1.69.5"
   }
 }

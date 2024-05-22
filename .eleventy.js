@@ -1,6 +1,7 @@
 const path = require("node:path");
 const sass = require("sass");
 const { EleventyI18nPlugin } = require("@11ty/eleventy");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
     // assets setup
@@ -12,6 +13,9 @@ module.exports = function(eleventyConfig) {
       defaultLanguage: "en", // Required, this site uses "en"
       errorMode: "allow-fallback", // only throw an error when the content doesn't exist in default lang
     });
+
+    // syntax highlighting
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     // sass/scss setup
     // add as a valid template language to process, e.g. this adds to --formats

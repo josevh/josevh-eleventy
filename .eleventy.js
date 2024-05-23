@@ -5,7 +5,9 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
     // assets setup
-    eleventyConfig.addPassthroughCopy("src/assets");
+    eleventyConfig.addPassthroughCopy("src/assets/js");
+    eleventyConfig.addPassthroughCopy("src/assets/uploads");
+    eleventyConfig.addPassthroughCopy("src/assets/favicon.ico");
 
     // i18n setup
     eleventyConfig.addPlugin(EleventyI18nPlugin, {

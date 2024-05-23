@@ -37,6 +37,10 @@ module.exports = function(eleventyConfig) {
           ]
         });
 
+        // so the file is re-compiled on update of dependent sass files
+        // eleventyConfig.addWatchTarget doesn't work the same
+        this.addDependencies(inputPath, result.loadedUrls);
+
         return (data) => {
           return result.css;
         };

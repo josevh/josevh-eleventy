@@ -1,9 +1,10 @@
 const path = require("node:path");
 const sass = require("sass");
-const { EleventyI18nPlugin } = require("@11ty/eleventy");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = function(eleventyConfig) {
+module.exports = async function(eleventyConfig) {
+    const { EleventyI18nPlugin } = await import("@11ty/eleventy");
+
     // assets setup
     eleventyConfig.addPassthroughCopy("src/assets/js");
     eleventyConfig.addPassthroughCopy("src/assets/uploads");
@@ -25,6 +26,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addExtension("scss", {
       outputFileExtension: "css", // optional, default: "html"
+
+      compileOptions: {
+        permalink: "raw"
+      },
 
       // can be an async function
       compile: function (inputContent, inputPath) {

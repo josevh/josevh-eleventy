@@ -1,11 +1,28 @@
 [
   {
-    "position": "Backend Engineer",
+    "position": "Senior Software Engineer",
+    "include": true,
+    "company": "Square (Block)",
+    "location": "San Francisco, CA (Remote)",
+    "start": "May 2025",
+    "end": "Present",
+    "description": [
+      "I'm working on the Banking Cash Flow Accounts team contributing to maintaing the bank account lifecycle."
+    ],
+    "languages": [
+      "Ruby (Rails)",
+      "Java",
+      "Kotlin",
+      "MySQL"
+    ]
+  },
+  {
+    "position": "Software Engineer",
     "include": true,
     "company": "Square (Block)",
     "location": "San Francisco, CA (Remote)",
     "start": "December 2022",
-    "end": "Present",
+    "end": "May 2025",
     "description": [
       "I'm working on the Hardware Shop team helping to make our online shop better for sellers.",
       "Was part of the effort to bring financing and installment payment functionality to three additional countries.",

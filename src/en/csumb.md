@@ -2,7 +2,7 @@
 layout: "page"
 title: CSUMB
 tags: page
-nav_include: true
+nav_include: false
 nav_order: 4
 pageImages:
   csumb_logo:

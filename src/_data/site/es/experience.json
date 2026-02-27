@@ -4,10 +4,11 @@
       "include": true,
       "company": "Square (Block)",
       "location": "San Francisco, CA (Remote)",
-      "start": "mayo 2025",
-      "end": "presente",
+      "start": "abril 2025",
+      "end": "marzo 2026",
       "description": [
-        "Trabajo en el equipo Cash Flow Accounts contribuyendo a mantener el ciclo de vida de las cuentas bancarias."
+        "Diseñé y lancé un proceso de procesamiento de cuentas inactivas de extremo a extremo para cumplir con los requisitos reglamentarios, cubriendo la identificación (Snowflake), la notificación al comerciante, el cierre automático, la implementación de funciones señalizadas y el monitoreo.",
+        "Lideré una migración sin tiempo de inactividad de un servicio de incorporación heredado utilizando tráfico de sombra y registro de desajustes estructurado, lo que permitió una transición segura y la descontinuación total de las dependencias heredadas."
       ],
       "languages": [
         "Ruby (Rails)",
@@ -22,11 +23,12 @@
       "company": "Square (Block)",
       "location": "San Francisco, CA (Remote)",
       "start": "diciembre 2022",
-      "end": "mayo 2025",
+      "end": "abril 2025",
       "description": [
-        "Trabajo en el equipo Hardware Shop mejorando nuestra tienda en línea.",
-        "Fui parte del esfuerzo para introducir planes de pago y financiamento a tres países adicionales.",
-        "Ayudé a implementar planes de subscripcion para paquetes de hardware y software."
+        "Implementé cuotas de emisores japoneses de extremo a extremo, desbloqueando un método de pago crítico para la expansión del mercado japonés y aumentando la conversión de pago a través de la visualización de precios de cuotas en el flujo de PDP/carrito/pedido.",
+        "Contribuí al rediseño del proceso de pago para la plataforma de comercio electrónico de hardware de Square que atiende a múltiples mercados internacionales, implementando patrones React modernos, gestión de promociones y diseños responsivos con Rails y React.",
+        "Migré la aplicación desde una aplicación interna para 'feature flags' a una aplicación de proveedor externo.",
+        "Agregué un flujo de intercambio para vendedores con dispositivos obsoletos, lo que contribuyó al esfuerzo de garantizar que los vendedores tuvieran acceso al hardware y software más reciente."
       ],
       "languages": [
         "Ruby (Rails)",

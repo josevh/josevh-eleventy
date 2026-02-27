@@ -4,10 +4,11 @@
     "include": true,
     "company": "Square (Block)",
     "location": "San Francisco, CA (Remote)",
-    "start": "May 2025",
-    "end": "Present",
+    "start": "April 2025",
+    "end": "March 2026",
     "description": [
-      "I'm working on the Banking Cash Flow Accounts team contributing to maintaing the bank account lifecycle."
+      "Designed and launched an end-to-end inactive account processing pipeline to meet regulatory requirements, covering identification (Snowflake), merchant notification, automated closure, feature-flagged rollout, and monitoring.",
+      "Led a zero-downtime migration off a legacy onboarding service using shadow traffic and structured mismatch logging, enabling safe cutover and full deprecation of legacy dependencies."
     ],
     "languages": [
       "Ruby (Rails)",
@@ -22,11 +23,12 @@
     "company": "Square (Block)",
     "location": "San Francisco, CA (Remote)",
     "start": "December 2022",
-    "end": "May 2025",
+    "end": "April 2025",
     "description": [
-      "I'm working on the Hardware Shop team helping to make our online shop better for sellers.",
-      "Was part of the effort to bring financing and installment payment functionality to three additional countries.",
-      "Helped implement subscription plan functionality for hardware and software bundles."
+      "Implemented Japan issuer installments end-to-end, unlocking a critical payment method for Japanese market expansion and increasing checkout conversion through installment pricing display across PDP/cart/order flow.",
+      "Contributed to checkout redesign for Square's hardware e-commerce platform serving multiple international markets, implementing modern React patterns, promo management, and responsive layouts across Rails + React stack.",
+      "Migrated application from in-house feature flag application to vendor application.",
+      "Added trade-in flow for sellers with deprecated devices contributing to the effort to ensure sellers had access to latest hardware and software."
     ],
     "languages": [
       "Ruby (Rails)",

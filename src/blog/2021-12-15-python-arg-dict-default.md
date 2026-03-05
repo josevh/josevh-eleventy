@@ -53,8 +53,9 @@ for argument values. There is a warning:
 difference when the default is a mutable object such as a list, dictionary, or
 instances of most classes.
 
-The issue will apply to **mutable** objects mentioned: list, dictionary, or
-class instantiations.
+The issue applies to **mutable** default objects in general. So while list and
+dictionary are common examples, it also includes things like `set`,
+`bytearray`, or mutable class instances.
 
 The recommendation, and solution, is the following:
 

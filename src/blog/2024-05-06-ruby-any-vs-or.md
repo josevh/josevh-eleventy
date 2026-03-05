@@ -1,10 +1,10 @@
 ---
-title: Ruby `#any` vs `or`
-excerpt: Recently ran into a bug where using simple `or` statements would have
-  avoided the whole issue.
+title: "Ruby Array#any? vs ||"
+excerpt: Recently ran into a bug where simple `||` conditions would have avoided
+  the issue.
 date: 2024-05-06T09:27:00.000Z
 ---
-### The Problem
+## The Problem
 
 I recently ran into this bug during a code review. In an attempt to avoid long chains of `or` statements, code like the following was introduced:
 
@@ -26,13 +26,13 @@ NoMethodError: undefined method `some_attr' for nil:NilClass
 
 ## The Cause
 
-At first glance, it appears that the `Array#any?` method does not exit early on the first truthy value it encounters. However, what is actually happening is that **the contents of the array are being evaluated *before* they are inserted into the array**.
+At first glance, it appears that `Array#any?` is not short-circuiting. In reality, `any?` can short-circuit, but **the array elements are evaluated before `any?` runs**, so `some_model.some_attr` is still called even when `some_model.nil?` is true.
 
-### The Solution
+## The Solution
 
-The problem here is only a problem because we expected a previous `if` condition to protect us from errors in a subsequent condition. There are many ways to avoid this. 
+The problem here occurs because we expected an earlier condition in the same expression to protect us from errors in a later condition. There are many ways to avoid this.
 
-One could use `or` statements:
+One could use `||` statements:
 
 ```ruby
 if some_model.nil? || some_model.some_attr # || ...
@@ -44,11 +44,12 @@ One could use `nil`-safe attribute accessors:
 
 ```ruby
 if [
+  some_model.nil?,
   some_model&.some_attr,
-  # ...
+  # other chained conditions..
 ].any?
   return false
 end
 ```
 
-In the end, I've come to prefer using `or` statements. Using the `#any?` statement makes it more likely that bugs may sneak in undetected if the writer of the code or the reviewer are familiar with this nuance or if tests aren't written to catch the condition. Keeping it simple by using `or` statements is more clear and not subject to language-specific nuance.
+In the end, I've come to prefer using `||` statements. Using `#any?` here makes it more likely that bugs may sneak in if the writer or reviewer is unfamiliar with this nuance, or if tests do not cover the condition. Keeping it simple with `||` is clearer and avoids this language-specific gotcha.

@@ -1,11 +1,13 @@
+@use "../abstracts/tokens" as t;
+
 html body {
   nav.navbar {
     border: none !important;
   }
 
   nav.navbar .navbar-brand {
-    background-color: $text-color-dark;
-    color: $background-color !important;
+    background-color: t.$text-color-dark;
+    color: t.$background-color !important;
     font-style: italic;
     font-weight: 700;
     line-height: 1.5;
@@ -14,11 +16,11 @@ html body {
   }
 
   .navbar-light {
-    background-color: $background-color !important;
+    background-color: t.$background-color !important;
   }
 
   .navbar-light .navbar-brand:focus,
   .navbar-light .navbar-brand:hover {
-    color: $background-color;
+    color: t.$background-color;
   }
 }

@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "abstracts/tokens";
-@import "base/global";
-@import "components/navbar";
-@import "utilities/font-helpers";
+@use "abstracts/tokens";
+@use "base/global";
+@use "components/navbar";
+@use "utilities/font-helpers";

@@ -1,17 +1,19 @@
+@use "../abstracts/tokens" as t;
+
 html body .font-sans-serif {
-  font-family: $font-headings !important;
+  font-family: t.$font-headings !important;
 }
 
 .font-headings {
-  font-family: $font-headings !important;
+  font-family: t.$font-headings !important;
 }
 
 .font-regular {
-  font-family: $font-regular !important;
+  font-family: t.$font-regular !important;
 }
 
 .font-monospace {
-  font-family: $font-monospace !important;
+  font-family: t.$font-monospace !important;
 }
 
 a.no-border,
@@ -20,7 +22,7 @@ a.no-border:hover {
 }
 
 hr.dark {
-  border-top-color: $text-color-dark;
+  border-top-color: t.$text-color-dark;
 }
 
 hr.bold {

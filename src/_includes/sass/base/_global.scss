@@ -1,12 +1,14 @@
+@use "../abstracts/tokens" as t;
+
 html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  background-color: $background-color;
+  background-color: t.$background-color;
 
   body {
     background-color: inherit;
-    color: $text-color-regular;
-    font-family: $font-regular;
+    color: t.$text-color-regular;
+    font-family: t.$font-regular;
 
     h1,
     h2,
@@ -15,8 +17,8 @@ html {
     h5,
     h6,
     nav {
-      color: $text-color-dark;
-      font-family: $font-headings;
+      color: t.$text-color-dark;
+      font-family: t.$font-headings;
     }
 
     h1 {
@@ -32,12 +34,12 @@ html {
     pre,
     samp,
     pre > code {
-      font-family: $font-monospace;
+      font-family: t.$font-monospace;
     }
 
     blockquote {
-      background-color: $background-color-medium;
-      border-left: 4px solid $text-color-light;
+      background-color: t.$background-color-medium;
+      border-left: 4px solid t.$text-color-light;
       margin-left: 8px;
       margin-right: 8px;
       padding-left: 8px;
@@ -45,14 +47,14 @@ html {
     }
 
     .content-wrapper a {
-      border-bottom: 1px dotted $text-color-link;
-      color: $text-color-link;
+      border-bottom: 1px dotted t.$text-color-link;
+      color: t.$text-color-link;
     }
 
     .content-wrapper a:hover {
-      border-bottom-color: $text-color-dark;
+      border-bottom-color: t.$text-color-dark;
       border-bottom-style: solid;
-      color: $text-color-dark;
+      color: t.$text-color-dark;
       text-decoration: none;
     }
   }

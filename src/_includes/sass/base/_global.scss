@@ -26,7 +26,11 @@ html {
     }
 
     p {
-      line-height: 2;
+      line-height: 1.7;
+    }
+
+    .content-wrapper li + li {
+      margin-top: 0.35rem;
     }
 
     code,

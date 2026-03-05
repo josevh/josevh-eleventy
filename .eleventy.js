@@ -6,9 +6,6 @@ module.exports = async function(eleventyConfig) {
     const { EleventyI18nPlugin } = await import("@11ty/eleventy");
 
     // ignore some files
-    // don't publish blog page and blog posts
-    eleventyConfig.ignores.add("src/*/blog.njk");
-    eleventyConfig.ignores.add("src/*/blog/**");
     // don't publish projects pages
     eleventyConfig.ignores.add("src/*/projects.njk");
     eleventyConfig.ignores.add("src/*/projects/**");

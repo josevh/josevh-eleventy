@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light bg-light navbar-expand-md px-0">
   {%- set current_url = page.url if page.url else '' -%}
   <a class="navbar-brand" href="/">{{ site.title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -10,11 +10,12 @@
       {# Automatic nav items from pages #}
       {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
         {% if nav_page.data.nav_include %}
-          <li class="nav-item {% if nav_page.url in current_url %}active{% endif %}">
+          <li class="nav-item">
             <a
-              class="nav-link"
+              class="nav-link {% if nav_page.url in current_url %}active{% endif %}"
               href="{{ nav_page.url | url }}"
-            >{{ nav_page.data.title }}{% if nav_page.url == current_url %}<span class="sr-only">(current)</span>{% endif %}</a>
+              {% if nav_page.url == current_url %}aria-current="page"{% endif %}
+            >{{ nav_page.data.title }}{% if nav_page.url == current_url %}<span class="visually-hidden">(current)</span>{% endif %}</a>
           </li>
         {% endif %}
       {% endfor %}

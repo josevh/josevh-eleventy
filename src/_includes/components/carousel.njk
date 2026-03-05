@@ -1,7 +1,7 @@
-<div id="image-carousel" class="carousel slide dark" data-ride="carousel">
+<div id="image-carousel" class="carousel slide dark" data-bs-ride="carousel">
 <ol class="carousel-indicators">
     {%- for image in images -%}
-        <li data-target="#image-carousel" data-slide-to="{{ forloop.index0 }}"
+        <li data-bs-target="#image-carousel" data-bs-slide-to="{{ forloop.index0 }}"
             class="{% if forloop.first %}active{% endif %}"
         ></li>
     {%- endfor -%}
@@ -13,12 +13,12 @@
     </div>
     {%- endfor -%}
 </div>
-<a class="carousel-control-prev" href="#image-carousel" role="button" data-slide="prev">
+<a class="carousel-control-prev" href="#image-carousel" role="button" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="visually-hidden">Previous</span>
 </a>
-<a class="carousel-control-next" href="#image-carousel" role="button" data-slide="next">
+<a class="carousel-control-next" href="#image-carousel" role="button" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="visually-hidden">Next</span>
 </a>
 </div>

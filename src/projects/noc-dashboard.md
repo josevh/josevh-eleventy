@@ -9,8 +9,8 @@ sort_order: 99
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-family: sans-serif">&times;</span></button>
         <h4 class="modal-title">NOC Dashboard</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div><!-- /.modal-header -->
       <div class="modal-body">
         <img src="#" data-lazy-src="/assets/uploads/noc-dashboard.png" alt="NOC Dashboard Home">

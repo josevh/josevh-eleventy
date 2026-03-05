@@ -11,6 +11,9 @@ module.exports = function(eleventyConfig) {
       "_redirects",
       "src/admin",
     ].forEach((entry) => eleventyConfig.addPassthroughCopy(entry));
+    eleventyConfig.addPassthroughCopy({
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js": "assets/js/bootstrap.bundle.min.js",
+    });
 
     // syntax highlighting
     eleventyConfig.addPlugin(syntaxHighlight);
@@ -37,6 +40,7 @@ module.exports = function(eleventyConfig) {
             loadPaths: [
               parsed.dir || ".",
               this.config.dir.includes,
+              "node_modules",
             ],
             style: isProduction ? "compressed" : "expanded",
             sourceMap: !isProduction,

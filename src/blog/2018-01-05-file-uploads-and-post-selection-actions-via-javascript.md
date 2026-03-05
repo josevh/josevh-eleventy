@@ -15,7 +15,7 @@ My initial idea was to inject new inputs and companion `select` boxes (for the c
 ## Solution
 I was not aware of this but I found that if you push the File objects from the file input's FileList to your own array. You keep the references to the file even after clearing the file input. In that way, I was able to generate companion `select`s for the files.
 
-Example of file input (using Vue.js):
+Example of file input (using Vue 2):
 ```html
 <div id="app">
     <div>
@@ -50,5 +50,4 @@ var app = new Vue({
 
 With this ability, I was able to speed up the process by selecting multiple files at once and then configuring their categories. This way is much faster than selecting and configuring a file individually. It gets even faster with drag and drop.
 
-Checkout the [JSBin](https://jsbin.com/lopiwig/2/edit?html,js,output).
-
+Check out the [JSBin](https://jsbin.com/lopiwig/2/edit?html,js,output).

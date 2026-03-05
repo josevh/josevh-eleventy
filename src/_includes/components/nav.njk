@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light bg-light navbar-expand-md px-0">
   {%- set current_url = page.url if page.url else '' -%}
-  <a class="navbar-brand" href="{{ '/' | locale_url }}">{{ site[page.lang].title }}</a>
+  <a class="navbar-brand" href="/">{{ site.title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,7 +9,7 @@
     <ul class="navbar-nav">
       {# Automatic nav items from pages #}
       {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
-        {% if nav_page.data.nav_include and page.lang == nav_page.data.lang %}
+        {% if nav_page.data.nav_include %}
           <li class="nav-item {% if nav_page.url in current_url %}active{% endif %}">
             <a
               class="nav-link"
@@ -18,30 +18,6 @@
           </li>
         {% endif %}
       {% endfor %}
-    </ul>
-
-    {# Language switcher #}
-    <ul class="nav navbar-nav language-nav ml-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-          <span class="country-name notranslate">{{ page.lang | upper }}</span>
-        </a>
-        <div class="dropdown-menu">
-          {%- set links=current_url|locale_links -%}
-          {%- for link in links -%}
-            <a class="dropdown-item" href="{{ link.url }}">
-              <span class="country-name notranslate">{{ link.lang | upper }} - {{ link.label }}</span>
-            </a>
-          {%- endfor -%}
-          {# Handle pages with no translation: offer the other supported locale homepage. #}
-          {%- if links.length == 0 -%}
-            {%- set fallback_lang = "es" if page.lang == "en" else "en" -%}
-            <a href="{{ '/' | locale_url(fallback_lang) }}" class="dropdown-item">
-              <span class="country-name notranslate">{{ fallback_lang | upper }} - {{ site[fallback_lang].language_label }}</span>
-            </a>
-          {%- endif -%}
-        </div>
-      </li>
     </ul>
   </div>
 </nav>

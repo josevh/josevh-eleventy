@@ -5,7 +5,6 @@ date: 2017-02-25 20:30:00
 postTags:
   - android
   - java
-lang: en
 draft: true
 pageImages:
   icon:

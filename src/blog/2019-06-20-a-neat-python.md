@@ -6,7 +6,6 @@ draft: true
 postTags:
   - python
   - env
-lang: en
 ---
 
 ## Context

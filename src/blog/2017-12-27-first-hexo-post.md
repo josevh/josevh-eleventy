@@ -8,7 +8,6 @@ postTags:
   - javascript
   - meta
   - ssg
-lang: en
 draft: true
 ---
 First post after switching to **Hexo**.

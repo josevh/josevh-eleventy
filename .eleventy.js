@@ -2,20 +2,11 @@ const path = require("node:path");
 const sass = require("sass");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
-module.exports = async function(eleventyConfig) {
-    const { EleventyI18nPlugin } = await import("@11ty/eleventy");
-
+module.exports = function(eleventyConfig) {
     // assets setup
     eleventyConfig.addPassthroughCopy("src/assets/js");
     eleventyConfig.addPassthroughCopy("src/assets/uploads");
     eleventyConfig.addPassthroughCopy("src/assets/favicon.ico");
-
-    // i18n setup
-    eleventyConfig.addPlugin(EleventyI18nPlugin, {
-      // any valid BCP 47-compatible language tag is supported
-      defaultLanguage: "en", // Required, this site uses "en"
-      errorMode: "allow-fallback", // only throw an error when the content doesn't exist in default lang
-    });
 
     // syntax highlighting
     eleventyConfig.addPlugin(syntaxHighlight);
@@ -56,9 +47,8 @@ module.exports = async function(eleventyConfig) {
       return (new Date()).toLocaleDateString('en-US', {year: "numeric"}).toString();
     });
 
-    eleventyConfig.addFilter("blog_date", function (dateValue, pageLang) {
-      const locale = "US";
-      return dateValue.toLocaleDateString(`${pageLang}-${locale}`, {
+    eleventyConfig.addFilter("blog_date", function (dateValue) {
+      return dateValue.toLocaleDateString("en-US", {
         year: 'numeric',
         month: 'short',
         day: '2-digit',

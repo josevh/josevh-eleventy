@@ -6,7 +6,6 @@ postTags:
   - javascript
   - web
 date:   2016-05-30 13:00:00
-lang: en
 draft: true
 ---
 Today, on Memorial Day, I took the opportunity to look into something I've been wanting to experiment with for a while now. After hearing about summer camps that will be made available in school for learning about the MEAN stack I decided to look into it myself.

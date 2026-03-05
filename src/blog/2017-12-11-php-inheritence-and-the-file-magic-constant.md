@@ -5,7 +5,6 @@ date: 2017-12-11T18:09:30
 postTags:
   - php
   - oop
-lang: en
 ---
 
 How to solve a problem in PHP relating to inheritance and magic constants.

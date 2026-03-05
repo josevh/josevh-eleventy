@@ -21,9 +21,13 @@ The following example uses [Vue.js](https://vuejs.org/).
     <h3>Original</h3>
     <p v-for="message in messages">{{ message.content }}</p>
 
-    <h3>Modified</h3>
-    <p v-for="message in modifiedMessages">{{ message.content }}</p>
+    <h3>Draft</h3>
+    <p v-for="message in draftMessages">{{ message.content }}</p>
   </div>
+
+  <button @click="startEditing">Start editing</button>
+  <button @click="appendToFirstDraft">Append to first draft message</button>
+  <button @click="cancelEditing">Cancel editing</button>
 </div>
 ```
 
@@ -35,15 +39,21 @@ var app = new Vue({
       {content: 'first-choice'},
       {content: 'second-choice'},
       {content: 'third-choice'},
-    ]
+    ],
+    draftMessages: []
   },
-  computed: {
-    modifiedMessages: function() {
-      var temp = this.messages.slice(0);
-      temp.forEach(function(message) {
-        message.content += ' appended';
-      });
-      return temp;
+  methods: {
+    startEditing: function() {
+      // BUG: shallow array clone, same object references.
+      this.draftMessages = this.messages.slice(0);
+    },
+    appendToFirstDraft: function() {
+      if (this.draftMessages.length > 0) {
+        this.draftMessages[0].content += ' appended';
+      }
+    },
+    cancelEditing: function() {
+      this.draftMessages = [];
     }
   },
 });
@@ -58,36 +68,40 @@ Messages
 
 Original
 first-choice appended
-second-choice appended
-third-choice appended
+second-choice
+third-choice
 
-Modified
+Draft
 first-choice appended
-second-choice appended
-third-choice appended
+second-choice
+third-choice
 ```
 
-The original values were modified, not what was intended.
-The reason is that, although, [`Array.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) _did_ clone the array, the references to objects were **kept**.
+After clicking `Start editing`, then `Append to first draft message`, the original first value was modified too, not what was intended.
+The reason is that [`Array.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) _did_ clone the array, but references to the same objects were **kept**.
 
 ## Solution
 
-There are [various](https://stackoverflow.com/a/42524097) ways to clone an array (less if you must support at leat IE9).  However, there are not that many ways of cloning an array of objects without keeping objects' references.
+There are [various](https://stackoverflow.com/a/42524097) ways to clone an array (less if you must support at least IE9). However, there are not that many ways of cloning an array of objects without keeping objects' references.
 
-The two ways are:
+For vanilla ES5 JavaScript, two common ways are:
 
 1. Using [`JSON.parse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) and [`JSON.stringify()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to serialize the array and recreate it.
 2. Manually via for-loop.
 
-I opted for the JSON method.
+The JSON approach works well for plain JSON-safe data, but it can drop/transform values like `Date`, `undefined`, functions, `Map`/`Set`, and it fails on circular references.
+
+I opted for manually cloning each object.
 
 ```javascript
-modifiedMessages: function() {
-  var temp = JSON.parse(JSON.stringify(this.messages));
-  temp.forEach(function(message) {
-    message.content += ' appended';
+startEditing: function() {
+  var temp = [];
+
+  this.messages.forEach(function(message) {
+    temp.push({ content: message.content });
   });
-  return temp;
+
+  this.draftMessages = temp;
 }
 ```
 
@@ -101,15 +115,11 @@ first-choice
 second-choice
 third-choice
 
-Modified
+Draft
 first-choice appended
-second-choice appended
-third-choice appended
+second-choice
+third-choice
 ```
 
 So, to conclude, [`Array.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) _will_ clone an array. If it has objects, however, it will keep the references to those objects. This method will work without issues on arrays of primitive value.
-For arrays of objects, a different approach is required. By far the easies is to use the JSON methods.
-
-[JSFiddle](https://jsfiddle.net/w9cw9kme/11/)
-
-[StackOverflow](https://stackoverflow.com/a/9886013)
+For arrays of objects, a different approach is required.

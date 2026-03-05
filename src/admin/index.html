@@ -6,13 +6,13 @@
     <meta name="robots" content="noindex" />
     <title>Content Manager</title>
 
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <!-- Include the script that builds the page and powers Sveltia CMS -->
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
 
     <script>
+      // Sveltia currently has limited parity for custom editor component previews.
       // src: https://answers.netlify.com/t/adding-classes-to-images/3480/10
       CMS.registerEditorComponent({
         label: 'Image',

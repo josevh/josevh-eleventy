@@ -1,8 +1,7 @@
-# enable to run decapcms locally using `npx decap-server`
-local_backend: true
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: josevh/josevh-eleventy
+  branch: main
 media_folder: "src/assets/uploads" # Media files will be stored in the repo under images/uploads
 public_folder: "/assets/uploads"
 collections:

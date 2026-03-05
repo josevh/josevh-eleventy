@@ -53,6 +53,7 @@ html {
     .content-wrapper a {
       border-bottom: 1px dotted t.$text-color-link;
       color: t.$text-color-link;
+      text-decoration: none;
     }
 
     .content-wrapper a:hover {

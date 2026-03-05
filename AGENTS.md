@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## Project Purpose
-Personal multilingual blog/portfolio built with Eleventy.
+Personal blog/portfolio built with Eleventy.
 Primary goals: simple content publishing, fast static output, and maintainable styling.
 
 ## Tech Stack
@@ -28,7 +28,7 @@ Primary goals: simple content publishing, fast static output, and maintainable s
 - SCSS is compiled by `sass.compileString` with load paths including:
   - current file dir
   - Eleventy includes dir
-- i18n uses `EleventyI18nPlugin` with default language `en`.
+- Site language is `en-US` (no Eleventy i18n plugin).
 
 ## Sass Architecture (Current)
 Use module-based Sass (`@use`), not Sass `@import`.
@@ -61,9 +61,14 @@ Entry modules:
 - Keep changes scoped and avoid unrelated formatting churn.
 - Do not modify `dist/` manually; it is generated.
 
-## Content/I18n Conventions
-- English and Spanish content coexist under `src/en` and `src/es`.
-- Keep parity between locales when adding nav items, sections, or structural pages.
+## Content Conventions
+- Content pages live directly under `src/` (for example: `src/index.md`, `src/blog.njk`, `src/projects.njk`).
+- Blog posts live under `src/blog/`.
+- Project pages live under `src/projects/`.
+- Site metadata is flat in `src/_data/site.json`.
+- Experience and education data live in:
+  - `src/_data/site/experience.json`
+  - `src/_data/site/education.json`
 
 ## Safe Defaults
 - If unsure where a style belongs:

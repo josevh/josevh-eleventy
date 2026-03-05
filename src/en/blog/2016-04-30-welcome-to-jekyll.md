@@ -8,6 +8,7 @@ postTags:
   - ruby
 date:   2016-04-29 10:28:59
 lang: en
+draft: true
 ---
 This is my first post in this Jekyll experiment.
 

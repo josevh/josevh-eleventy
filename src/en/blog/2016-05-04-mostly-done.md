@@ -5,6 +5,7 @@ date:   2016-05-04 13:00:00
 postTags:
   - meta
 lang: en
+draft: true
 carousel:
   images:
     - url: /assets/uploads/jekyll-screenshot.png

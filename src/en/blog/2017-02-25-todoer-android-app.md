@@ -6,6 +6,7 @@ postTags:
   - android
   - java
 lang: en
+draft: true
 pageImages:
   icon:
     url: /assets/uploads/20170225-todoer-icon-min.png

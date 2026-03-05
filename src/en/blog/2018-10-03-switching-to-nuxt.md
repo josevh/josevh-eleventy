@@ -9,6 +9,7 @@ postTags:
   - meta
   - ssg
 lang: en
+draft: true
 ---
 ## Why
 I had been wanting to rewrite this site for a good while.

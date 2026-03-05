@@ -1,4 +1,5 @@
 <nav class="navbar navbar-light bg-light navbar-expand-md px-0">
+  {%- set current_url = page.url if page.url else '' -%}
   <a class="navbar-brand" href="{{ '/' | locale_url }}">{{ site[page.lang].title }}</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,11 +10,11 @@
       {# Automatic nav items from pages #}
       {% for nav_page in collections.page|sort(attribute="data.nav_order") %}
         {% if nav_page.data.nav_include and page.lang == nav_page.data.lang %}
-          <li class="nav-item {% if nav_page.url in page.url %}active{% endif %}">
+          <li class="nav-item {% if nav_page.url in current_url %}active{% endif %}">
             <a
               class="nav-link"
               href="{{ nav_page.url | url }}"
-            >{{ nav_page.data.title }}{% if nav_page.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+            >{{ nav_page.data.title }}{% if nav_page.url == current_url %}<span class="sr-only">(current)</span>{% endif %}</a>
           </li>
         {% endif %}
       {% endfor %}
@@ -26,7 +27,7 @@
           <span class="country-name notranslate">{{ page.lang | upper }}</span>
         </a>
         <div class="dropdown-menu">
-          {%- set links=page.url|locale_links -%}
+          {%- set links=current_url|locale_links -%}
           {%- for link in links -%}
             <a class="dropdown-item" href="{{ link.url }}">
               <span class="country-name notranslate">{{ link.lang | upper }} - {{ link.label }}</span>

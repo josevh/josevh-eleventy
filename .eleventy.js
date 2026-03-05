@@ -5,11 +5,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 module.exports = async function(eleventyConfig) {
     const { EleventyI18nPlugin } = await import("@11ty/eleventy");
 
-    // ignore some files
-    // don't publish projects pages
-    eleventyConfig.ignores.add("src/*/projects.njk");
-    eleventyConfig.ignores.add("src/*/projects/**");
-
     // assets setup
     eleventyConfig.addPassthroughCopy("src/assets/js");
     eleventyConfig.addPassthroughCopy("src/assets/uploads");

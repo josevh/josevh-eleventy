@@ -33,10 +33,11 @@
               <span class="country-name notranslate">{{ link.lang | upper }} - {{ link.label }}</span>
             </a>
           {%- endfor -%}
-          {# Handle pages with no translation, offer Spanish homepage. Hard-coded, yikes. #}
-          {%- if links.length == 0 and page.lang == 'en' -%}
-            <a href="{{ '/' | locale_url('es') }}" class="dropdown-item">
-              <span class="country-name notranslate">ES - Español</span>
+          {# Handle pages with no translation: offer the other supported locale homepage. #}
+          {%- if links.length == 0 -%}
+            {%- set fallback_lang = "es" if page.lang == "en" else "en" -%}
+            <a href="{{ '/' | locale_url(fallback_lang) }}" class="dropdown-item">
+              <span class="country-name notranslate">{{ fallback_lang | upper }} - {{ site[fallback_lang].language_label }}</span>
             </a>
           {%- endif -%}
         </div>

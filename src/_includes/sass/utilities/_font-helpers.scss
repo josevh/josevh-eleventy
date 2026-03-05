@@ -1,0 +1,28 @@
+html body .font-sans-serif {
+  font-family: $font-headings !important;
+}
+
+.font-headings {
+  font-family: $font-headings !important;
+}
+
+.font-regular {
+  font-family: $font-regular !important;
+}
+
+.font-monospace {
+  font-family: $font-monospace !important;
+}
+
+a.no-border,
+a.no-border:hover {
+  border-bottom: none !important;
+}
+
+hr.dark {
+  border-top-color: $text-color-dark;
+}
+
+hr.bold {
+  border-top-width: 2px;
+}

@@ -1,0 +1,10 @@
+// for svg icon links in contact page
+a svg {
+  fill: $text-color-link;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+a svg:hover {
+  fill: $text-color-dark;
+}

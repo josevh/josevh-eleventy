@@ -89,10 +89,10 @@
     "start": "February 2015",
     "end": "July 2016",
     "description": [
-      "Developed NOC monitoring dashboard and backend to support applications.",
-      "Wrote server scripts that integrated 3rd party services into central monitoring.",
-      "Designed system for report generation of team performance metrics.",
-      "Administered Jira company-wide and implemented departments' project requirements."
+      "Contributed to the launch of the Network Operations Center by integrating internal global systems and external vendor systems into centralized monitoring workflows and coordinating monitoring agent deployment.",
+      "Developed the frontend dashboard for NOC operations from scratch, integrating monitoring and ticketing systems and building a shift handoff submission workflow",
+      "Wrote SQL queries to generate performance metrics for NOC technicians and built a frontend reporting interface for managers to access data and create reports.",
+      "Administered Jira company-wide and partnered with cross-functional teams to implement issue-tracking and project management workflows aligned with their operational needs."
     ],
     "languages": [
       "C",
@@ -110,8 +110,11 @@
     "start": "September 2014",
     "end": "February 2015",
     "description": [
-      "Remedied company-wide payment system outage by writing hotfix script deployed to 1000+ store servers in 500+ locations.",
-      "Wrote Windows application for Store Support team that partially automated ticket creation."
+      "Tracked store IT issues in a ticketing system, performed Tier 1 triage, and dispatched on-site technicians to support issue resolution.",
+      "Developed an internal application to partially automate ticket submission, improving team productivity and reducing manual work.",
+      "During a payment system outage, wrote a remediation script that was deployed across 1,000+ servers to restore service.",
+      "Maintained and administered the monitoring server responsible for overseeing store servers and databases.",
+      "Wrote and maintained troubleshooting documentation and issue-resolution articles for the team knowledge base"
     ],
     "languages": [
       "Batch",

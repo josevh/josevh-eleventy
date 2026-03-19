@@ -10,7 +10,7 @@
       "Designed and launched an end-to-end inactive account processing pipeline for regulatory compliance, covering account identification in Snowflake, merchant notification, automated closure, feature-flagged rollout, and monitoring.",
       "Led a zero-downtime migration off a deprecated onboarding service using shadow traffic and structured mismatch logging, enabling safe cutover, parallel validation, and deprecation of legacy service dependencies.",
       "Improved reliability of inactive-account closure workflows by making account-closure API endpoints idempotent, preventing retry-driven failures from halting automated processing during rollout.",
-      "Leveraged generative AI/LLM tools (Claude Code, Codex, Amp) to research legacy-service dependencies, plan migrations, and accelerate implementation of production fixes across Square Banking projects."
+      "Leveraged generative AI/LLM tools (Claude Code, OpenAI Codex, Amp) to research legacy-service dependencies, plan migrations, and accelerate implementation of production fixes across Square Banking projects."
     ],
     "languages": [
       "Ruby (Rails)",

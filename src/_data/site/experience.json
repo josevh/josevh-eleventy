@@ -7,8 +7,10 @@
     "start": "April 2025",
     "end": "March 2026",
     "description": [
-      "Designed and launched an end-to-end inactive account processing pipeline to meet regulatory requirements, covering identification (Snowflake), merchant notification, automated closure, feature-flagged rollout, and monitoring.",
-      "Led a zero-downtime migration off a legacy onboarding service using shadow traffic and structured mismatch logging, enabling safe cutover and full deprecation of legacy dependencies."
+      "Designed and launched an end-to-end inactive account processing pipeline for regulatory compliance, covering account identification in Snowflake, merchant notification, automated closure, feature-flagged rollout, and monitoring.",
+      "Led a zero-downtime migration off a deprecated onboarding service using shadow traffic and structured mismatch logging, enabling safe cutover, parallel validation, and deprecation of legacy service dependencies.",
+      "Improved reliability of inactive-account closure workflows by making account-closure API endpoints idempotent, preventing retry-driven failures from halting automated processing during rollout.",
+      "Leveraged generative AI/LLM tools (Claude Code, Codex, Amp) to research legacy-service dependencies, plan migrations, and accelerate implementation of production fixes across Square Banking projects."
     ],
     "languages": [
       "Ruby (Rails)",
@@ -25,10 +27,10 @@
     "start": "December 2022",
     "end": "April 2025",
     "description": [
-      "Implemented Japan issuer installments end-to-end, unlocking a critical payment method for Japanese market expansion and increasing checkout conversion through installment pricing display across PDP/cart/order flow.",
-      "Contributed to checkout redesign for Square's hardware e-commerce platform serving multiple international markets, implementing modern React patterns, promo management, and responsive layouts across Rails + React stack.",
-      "Migrated application from in-house feature flag application to vendor application.",
-      "Added trade-in flow for sellers with deprecated devices contributing to the effort to ensure sellers had access to latest hardware and software."
+      "Implemented Japan issuer installments end-to-end across the checkout and payments stack, unlocking a key payment method for Japanese market expansion and increasing checkout conversion through installment pricing across PDP, cart, and order flows.",
+      "Contributed to a checkout redesign for Square's hardware e-commerce platform across multiple international markets, building responsive UI, promo code management, and modern React patterns in a Rails + React stack.",
+      "Migrated the application from an in-house feature flag system to a vendor platform, aligning the product with company-wide feature flag standardization.",
+      "Updated warranty and trade-in self-service flows for deprecated devices, helping transition sellers to newer hardware and supporting retirement of legacy devices that limited rollout of new software features."
     ],
     "languages": [
       "Ruby (Rails)",
@@ -44,12 +46,10 @@
     "start": "November 2018",
     "end": "December 2022",
     "description": [
-      "Implemented new features to allow users to self-service and reduce support load. They include account reactivation and partial payments.",
-      "Part of the effort to update our billing application to accommodate new payment service providers.",
-      "Led effort to migrate transactional emails to 3rd party service and update them from plaintext to HTML localized layouts.",
-      "Updated our team's web applications to record analytics metrics.",
-      "Contributed to the company's effort to Dockerize our team's multi-faceted web applications and migrate them to the AWS cloud.",
-      "Developed internal APIs leveraged by both our web applications and our Viewer desktop application related to MFA."
+      "Developed self-service customer account management features, including delinquent-account reactivation and partial payments, reducing support overhead across billing workflows.",
+      "Integrated payment service providers, including Adyen, into billing systems to expand payment options and support payment processing.",
+      "Led migration of transactional email infrastructure to Postmark templates across multiple systems, including localized HTML email templates.",
+      "Containerized applications with Docker and supported migration of infrastructure from datacenter environments to AWS, improving deployment consistency and platform modernization."
     ],
     "languages": [
       "Python (Django)",
@@ -70,11 +70,10 @@
     "start": "July 2016",
     "end": "November 2018",
     "description": [
-      "Wrote document management system for document distribution to stores.",
-      "Designed and implemented media distribution application to enable Marketing to share social and printable media with partners.",
-      "Developed and maintained RESTful APIs that were critical to customer-facing and internal business applications.",
-      "Developed scripts for the sanitation and import of data into company databases as well as the processes to monitor them.",
-      "Contributed to the planning and design of database schema to ensure normalized data with flexibility to grow."
+      "Built a document and media management system for distributing content to retail stores, replacing manual FTP-based processes.",
+      "Developed and maintained RESTful APIs and backend services supporting customer-facing and internal business applications.",
+      "Created data sanitization scripts and monitoring processes for database imports, improving data quality and reliability.",
+      "Contributed to database schema design and planning for normalized, scalable data architecture."
     ],
     "languages": [
       "PHP",

@@ -7,7 +7,7 @@ tags: page
 
 ### Hello there 👋
 
-<p class="lead mb-4">I'm Jose, a software engineer who likes building tools that make life a little easier. I recently worked at Square on products that connected technical depth with real-world impact.</p>
+<p class="lead mb-4">I'm Jose, a software engineer who likes building tools that make life a little easier. At Fanatics, I work within the Foundations team to build the core systems that support our ecosystem, utilizing AI to amplify our capabilities.</p>
 
 ### What I care about
 

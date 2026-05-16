@@ -1,5 +1,22 @@
 [
   {
+    "position": "Senior Backend Engineer",
+    "include": true,
+    "location": "New York, NY (Remote)",
+    "start": "April 2026",
+    "end": "Present",
+    "description": [
+      "Working on the Foundations team."
+    ],
+    "languages": [
+      "Java",
+      "Kotlin",
+      "Javascript (React)",
+      "Go",
+      "Postgres"
+    ]
+  },
+  {
     "position": "Senior Software Engineer",
     "include": true,
     "company": "Square (Block)",

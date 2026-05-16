@@ -11,7 +11,7 @@
     "languages": [
       "Java",
       "Kotlin",
-      "Javascript (React)",
+      "TypeScript (React)",
       "Go",
       "Postgres"
     ]
@@ -51,7 +51,7 @@
     ],
     "languages": [
       "Ruby (Rails)",
-      "Javascript (React)",
+      "TypeScript (React)",
       "MySQL"
     ]
   },
